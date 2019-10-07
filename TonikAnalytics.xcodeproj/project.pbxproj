@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */; };
+		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
+		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
+		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
+		2BEB832B234BBD13002E61E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */; };
+		2BEB8336234BBD13002E61E4 /* TonikAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8335234BBD13002E61E4 /* TonikAnalyticsTests.swift */; };
+		2BEB8341234BBD13002E61E4 /* TonikAnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8340234BBD13002E61E4 /* TonikAnalyticsUITests.swift */; };
+		2BEB8350234BC23D002E61E4 /* SocialAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */; };
+		2BEB8352234BC30D002E61E4 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */; };
+		2BEB8354234BC32B002E61E4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */; };
+		2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */; };
+		2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8359234BC426002E61E4 /* SettingsViewController.swift */; };
+		2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */; };
+		2BEB835F234BC992002E61E4 /* FeaturedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */; };
+		2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */; };
+		2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8362234BCA3D002E61E4 /* LogoView.swift */; };
+		2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */; };
+		2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */; };
+		2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */; };
+		2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */; };
+		2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836D234BCBCD002E61E4 /* Button.swift */; };
+		2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836F234BCBEB002E61E4 /* Image.swift */; };
+		2BEB8372234BCC17002E61E4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8371234BCC17002E61E4 /* Label.swift */; };
+		2BEB8374234BCC56002E61E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8373234BCC56002E61E4 /* Stack.swift */; };
+		2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8375234BCCEE002E61E4 /* UIColorExt.swift */; };
+		2BEB8378234BCD36002E61E4 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8377234BCD36002E61E4 /* UIImageExt.swift */; };
+		2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8379234BCE65002E61E4 /* UIToolbarExt.swift */; };
+		2BEB837C234BCE79002E61E4 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB837B234BCE79002E61E4 /* UIViewExt.swift */; };
+		2BEB837E234BCE9D002E61E4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB837D234BCE9D002E61E4 /* View.swift */; };
+		2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB837F234BCEC6002E61E4 /* LoginSignUpControllerExt.swift */; };
+		2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */; };
+		2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */; };
+		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
+		CB91F7FF61D92847F55CD621 /* Pods_TonikAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */; };
+		D36D1D1DB8F248AB177A2411 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BEB8332234BBD13002E61E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BEB8313234BBD12002E61E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BEB831A234BBD12002E61E4;
+			remoteInfo = TonikAnalytics;
+		};
+		2BEB833D234BBD13002E61E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BEB8313234BBD12002E61E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BEB831A234BBD12002E61E4;
+			remoteInfo = TonikAnalytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonikAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2BEB8327234BBD13002E61E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BEB832A234BBD13002E61E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BEB832C234BBD13002E61E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEB8331234BBD13002E61E4 /* TonikAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TonikAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEB8335234BBD13002E61E4 /* TonikAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonikAnalyticsTests.swift; sourceTree = "<group>"; };
+		2BEB8337234BBD13002E61E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEB833C234BBD13002E61E4 /* TonikAnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TonikAnalyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEB8340234BBD13002E61E4 /* TonikAnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonikAnalyticsUITests.swift; sourceTree = "<group>"; };
+		2BEB8342234BBD13002E61E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAnalyticsViewController.swift; sourceTree = "<group>"; };
+		2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAnalyticsViewController.swift; sourceTree = "<group>"; };
+		2BEB8359234BC426002E61E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCVCell.swift; sourceTree = "<group>"; };
+		2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCVCell.swift; sourceTree = "<group>"; };
+		2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		2BEB8362234BCA3D002E61E4 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVCell.swift; sourceTree = "<group>"; };
+		2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCVCell.swift; sourceTree = "<group>"; };
+		2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
+		2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageCell.swift; sourceTree = "<group>"; };
+		2BEB836D234BCBCD002E61E4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2BEB836F234BCBEB002E61E4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2BEB8371234BCC17002E61E4 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		2BEB8373234BCC56002E61E4 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		2BEB8375234BCCEE002E61E4 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		2BEB8377234BCD36002E61E4 /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
+		2BEB8379234BCE65002E61E4 /* UIToolbarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolbarExt.swift; sourceTree = "<group>"; };
+		2BEB837B234BCE79002E61E4 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		2BEB837D234BCE9D002E61E4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2BEB837F234BCEC6002E61E4 /* LoginSignUpControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpControllerExt.swift; sourceTree = "<group>"; };
+		2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardExt.swift; sourceTree = "<group>"; };
+		2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextBoxExt.swift; sourceTree = "<group>"; };
+		2BEB8386234BD898002E61E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C0B03E3782748B046761A7 /* Pods-TonikAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		F16B89509A1B5266BD70AD3F /* Pods-TonikAnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalyticsTests.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BEB8318234BBD12002E61E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91F7FF61D92847F55CD621 /* Pods_TonikAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB832E234BBD13002E61E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB8339234BBD13002E61E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36D1D1DB8F248AB177A2411 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BEB8312234BBD12002E61E4 = {
+			isa = PBXGroup;
+			children = (
+				2BEB831D234BBD12002E61E4 /* TonikAnalytics */,
+				2BEB8334234BBD13002E61E4 /* TonikAnalyticsTests */,
+				2BEB833F234BBD13002E61E4 /* TonikAnalyticsUITests */,
+				2BEB831C234BBD12002E61E4 /* Products */,
+				662E93DF2AF862A79AB93368 /* Pods */,
+				9D9B2064DABE55FEE6970CDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BEB831C234BBD12002E61E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */,
+				2BEB8331234BBD13002E61E4 /* TonikAnalyticsTests.xctest */,
+				2BEB833C234BBD13002E61E4 /* TonikAnalyticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BEB831D234BBD12002E61E4 /* TonikAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB831E234BBD12002E61E4 /* AppDelegate.swift */,
+				2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */,
+				2BEB836C234BCB20002E61E4 /* Extensions */,
+				2BEB835B234BC8EE002E61E4 /* Views */,
+				2BEB834E234BC22A002E61E4 /* ViewControllers */,
+				2BEB8327234BBD13002E61E4 /* Assets.xcassets */,
+				2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */,
+				2BEB832C234BBD13002E61E4 /* Info.plist */,
+			);
+			path = TonikAnalytics;
+			sourceTree = "<group>";
+		};
+		2BEB8334234BBD13002E61E4 /* TonikAnalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB8335234BBD13002E61E4 /* TonikAnalyticsTests.swift */,
+				2BEB8337234BBD13002E61E4 /* Info.plist */,
+			);
+			path = TonikAnalyticsTests;
+			sourceTree = "<group>";
+		};
+		2BEB833F234BBD13002E61E4 /* TonikAnalyticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB8340234BBD13002E61E4 /* TonikAnalyticsUITests.swift */,
+				2BEB8342234BBD13002E61E4 /* Info.plist */,
+			);
+			path = TonikAnalyticsUITests;
+			sourceTree = "<group>";
+		};
+		2BEB834E234BC22A002E61E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */,
+				2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */,
+				2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */,
+				2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */,
+				2BEB8359234BC426002E61E4 /* SettingsViewController.swift */,
+				2BEB8386234BD898002E61E4 /* TabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BEB835B234BC8EE002E61E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */,
+				2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */,
+				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
+				2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */,
+				2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */,
+				2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */,
+				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
+				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BEB836C234BCB20002E61E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB836D234BCBCD002E61E4 /* Button.swift */,
+				2BEB836F234BCBEB002E61E4 /* Image.swift */,
+				2BEB8371234BCC17002E61E4 /* Label.swift */,
+				2BEB8373234BCC56002E61E4 /* Stack.swift */,
+				2BEB8375234BCCEE002E61E4 /* UIColorExt.swift */,
+				2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */,
+				2BEB8377234BCD36002E61E4 /* UIImageExt.swift */,
+				2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */,
+				2BEB8379234BCE65002E61E4 /* UIToolbarExt.swift */,
+				2BEB837B234BCE79002E61E4 /* UIViewExt.swift */,
+				2BEB837D234BCE9D002E61E4 /* View.swift */,
+				2BEB837F234BCEC6002E61E4 /* LoginSignUpControllerExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		662E93DF2AF862A79AB93368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */,
+				E3C0B03E3782748B046761A7 /* Pods-TonikAnalytics.release.xcconfig */,
+				A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */,
+				5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */,
+				F16B89509A1B5266BD70AD3F /* Pods-TonikAnalyticsTests.debug.xcconfig */,
+				A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D9B2064DABE55FEE6970CDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */,
+				1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */,
+				DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BEB831A234BBD12002E61E4 /* TonikAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEB8345234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalytics" */;
+			buildPhases = (
+				00C19CF44EA70D79141CEF7A /* [CP] Check Pods Manifest.lock */,
+				2BEB8317234BBD12002E61E4 /* Sources */,
+				2BEB8318234BBD12002E61E4 /* Frameworks */,
+				2BEB8319234BBD12002E61E4 /* Resources */,
+				E52EE6AE35F7B7BBD5B50B1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TonikAnalytics;
+			productName = TonikAnalytics;
+			productReference = 2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BEB8330234BBD13002E61E4 /* TonikAnalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEB8348234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalyticsTests" */;
+			buildPhases = (
+				B34E2DD1BCD474C29961682A /* [CP] Check Pods Manifest.lock */,
+				2BEB832D234BBD13002E61E4 /* Sources */,
+				2BEB832E234BBD13002E61E4 /* Frameworks */,
+				2BEB832F234BBD13002E61E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BEB8333234BBD13002E61E4 /* PBXTargetDependency */,
+			);
+			name = TonikAnalyticsTests;
+			productName = TonikAnalyticsTests;
+			productReference = 2BEB8331234BBD13002E61E4 /* TonikAnalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BEB833B234BBD13002E61E4 /* TonikAnalyticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BEB834B234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalyticsUITests" */;
+			buildPhases = (
+				031DF713BCE8709E78F4B4BA /* [CP] Check Pods Manifest.lock */,
+				2BEB8338234BBD13002E61E4 /* Sources */,
+				2BEB8339234BBD13002E61E4 /* Frameworks */,
+				2BEB833A234BBD13002E61E4 /* Resources */,
+				632D26297E08655747773A7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BEB833E234BBD13002E61E4 /* PBXTargetDependency */,
+			);
+			name = TonikAnalyticsUITests;
+			productName = TonikAnalyticsUITests;
+			productReference = 2BEB833C234BBD13002E61E4 /* TonikAnalyticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BEB8313234BBD12002E61E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = HazeWritesCode;
+				TargetAttributes = {
+					2BEB831A234BBD12002E61E4 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					2BEB8330234BBD13002E61E4 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 2BEB831A234BBD12002E61E4;
+					};
+					2BEB833B234BBD13002E61E4 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 2BEB831A234BBD12002E61E4;
+					};
+				};
+			};
+			buildConfigurationList = 2BEB8316234BBD12002E61E4 /* Build configuration list for PBXProject "TonikAnalytics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BEB8312234BBD12002E61E4;
+			productRefGroup = 2BEB831C234BBD12002E61E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BEB831A234BBD12002E61E4 /* TonikAnalytics */,
+				2BEB8330234BBD13002E61E4 /* TonikAnalyticsTests */,
+				2BEB833B234BBD13002E61E4 /* TonikAnalyticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BEB8319234BBD12002E61E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEB832B234BBD13002E61E4 /* LaunchScreen.storyboard in Resources */,
+				2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB832F234BBD13002E61E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB833A234BBD13002E61E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C19CF44EA70D79141CEF7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TonikAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		031DF713BCE8709E78F4B4BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TonikAnalytics-TonikAnalyticsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632D26297E08655747773A7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B34E2DD1BCD474C29961682A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TonikAnalyticsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E52EE6AE35F7B7BBD5B50B1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BEB8317234BBD12002E61E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
+				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
+				2BEB837C234BCE79002E61E4 /* UIViewExt.swift in Sources */,
+				2BEB8352234BC30D002E61E4 /* LoginSignUpViewController.swift in Sources */,
+				2BEB8378234BCD36002E61E4 /* UIImageExt.swift in Sources */,
+				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
+				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
+				2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */,
+				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
+				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
+				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
+				2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */,
+				2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */,
+				2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */,
+				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
+				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
+				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
+				2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */,
+				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
+				2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */,
+				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
+				2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */,
+				2BEB8372234BCC17002E61E4 /* Label.swift in Sources */,
+				2BEB835F234BC992002E61E4 /* FeaturedCVCell.swift in Sources */,
+				2BEB8350234BC23D002E61E4 /* SocialAnalyticsViewController.swift in Sources */,
+				2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */,
+				2BEB8374234BCC56002E61E4 /* Stack.swift in Sources */,
+				2BEB8354234BC32B002E61E4 /* OnBoardingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB832D234BBD13002E61E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEB8336234BBD13002E61E4 /* TonikAnalyticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEB8338234BBD13002E61E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEB8341234BBD13002E61E4 /* TonikAnalyticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BEB8333234BBD13002E61E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BEB831A234BBD12002E61E4 /* TonikAnalytics */;
+			targetProxy = 2BEB8332234BBD13002E61E4 /* PBXContainerItemProxy */;
+		};
+		2BEB833E234BBD13002E61E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BEB831A234BBD12002E61E4 /* TonikAnalytics */;
+			targetProxy = 2BEB833D234BBD13002E61E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEB832A234BBD13002E61E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BEB8343234BBD13002E61E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BEB8344234BBD13002E61E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BEB8346234BBD13002E61E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BEB8347234BBD13002E61E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C0B03E3782748B046761A7 /* Pods-TonikAnalytics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BEB8349234BBD13002E61E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16B89509A1B5266BD70AD3F /* Pods-TonikAnalyticsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TonikAnalytics.app/TonikAnalytics";
+			};
+			name = Debug;
+		};
+		2BEB834A234BBD13002E61E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalyticsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalyticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TonikAnalytics.app/TonikAnalytics";
+			};
+			name = Release;
+		};
+		2BEB834C234BBD13002E61E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalyticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalyticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TonikAnalytics;
+			};
+			name = Debug;
+		};
+		2BEB834D234BBD13002E61E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = TonikAnalyticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HazeWritesCode.Project.TonikAnalyticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TonikAnalytics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BEB8316234BBD12002E61E4 /* Build configuration list for PBXProject "TonikAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEB8343234BBD13002E61E4 /* Debug */,
+				2BEB8344234BBD13002E61E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BEB8345234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEB8346234BBD13002E61E4 /* Debug */,
+				2BEB8347234BBD13002E61E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BEB8348234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEB8349234BBD13002E61E4 /* Debug */,
+				2BEB834A234BBD13002E61E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BEB834B234BBD13002E61E4 /* Build configuration list for PBXNativeTarget "TonikAnalyticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BEB834C234BBD13002E61E4 /* Debug */,
+				2BEB834D234BBD13002E61E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BEB8313234BBD12002E61E4 /* Project object */;
+}

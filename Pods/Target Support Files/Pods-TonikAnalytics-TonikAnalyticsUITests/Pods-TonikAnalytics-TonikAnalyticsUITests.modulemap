@@ -1,0 +1,6 @@
+framework module Pods_TonikAnalytics_TonikAnalyticsUITests {
+  umbrella header "Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
