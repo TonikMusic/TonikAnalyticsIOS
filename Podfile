@@ -7,6 +7,7 @@ target 'TonikAnalytics' do
 
   # Pods for TonikAnalytics
   pod 'IQKeyboardManagerSwift'
+  pod 'Charts'
 
   target 'TonikAnalyticsTests' do
     inherit! :search_paths
