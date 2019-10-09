@@ -42,9 +42,12 @@ class TabBarController: UITabBarController {
         let controllers = [home, profile, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-        self.selectedIndex = 0
         
         setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.selectedViewController = viewControllers?[1]
     }
 }
     

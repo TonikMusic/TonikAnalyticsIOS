@@ -5,61 +5,93 @@ import UIKit
 import Foundation
 
 class SocialAnalyticsViewController: UIViewController {
-    
-    var mainScrollView: UIScrollView!
     let graphView = GraphView()
-    let linkedSocialAccounts: [GraphButton] = []
+    let IGButton = GraphButton()
+    let FBButton = GraphButton()
+    let TWTRButton = GraphButton()
+    let SCButton = GraphButton()
+    let overAllButton = GraphButton()
+    
+    let buttonWidth: CGFloat = 175
+    let buttonHeight: CGFloat = 125
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.]
         
-        
-        setupMainScrollView()
+        setupGraph()
         setupButtons()
-        graphView.backgroundColor = .white
         
-        mainScrollView.add(subview: graphView) { (v, p) in [
+    }
+    
+    
+    
+    func setupGraph() {
+        view.add(subview: graphView) { (v, p) in [
+            v.centerXAnchor.constraint(equalTo: p.safeAreaLayoutGuide.centerXAnchor, constant: 0),
             v.topAnchor.constraint(equalTo: p.safeAreaLayoutGuide.topAnchor, constant: 8),
             v.leadingAnchor.constraint(equalTo: p.safeAreaLayoutGuide.leadingAnchor, constant: 8),
             v.trailingAnchor.constraint(equalTo: p.safeAreaLayoutGuide.trailingAnchor, constant: -8),
             v.heightAnchor.constraint(equalToConstant: 300)
             ]}
-        
-        mainScrollView.bringSubviewToFront(graphView)
-        
+        graphView.backgroundColor = .white
+        graphView.dropShadow()
     }
     
     
     func setupButtons(){
+        //TODO : Make Connectons to API to get real Data\
         
-    }
-    
-    
-    
-    
-    
-    // Sets up the needed properties for the collectionView
-    func setupMainScrollView(){
-        // NOTE: baisc setup for collectionCiew
-        mainScrollView = UIScrollView()
-        mainScrollView.delegate = self
-        mainScrollView.backgroundColor = .darkGray
-        mainScrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        // NOTE: add to parent with constraints
-        view.add(subview: mainScrollView) { (v, p) in [
-            v.topAnchor.constraint(equalTo: p.safeAreaLayoutGuide.topAnchor, constant: 0),
-            v.leadingAnchor.constraint(equalTo: p.safeAreaLayoutGuide.leadingAnchor, constant: 0),
-            v.trailingAnchor.constraint(equalTo: p.safeAreaLayoutGuide.trailingAnchor, constant: 0),
-            v.heightAnchor.constraint(equalToConstant: p.bounds.height)
+        IGButton.mainCounter.text = "\(5)"
+        IGButton.socialLabel.text = "Instagram"
+        
+        view.add(subview: IGButton) { (v, p) in [
+            v.topAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.bottomAnchor, constant: 16),
+            v.leadingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            v.widthAnchor.constraint(equalToConstant: buttonWidth),
+            v.heightAnchor.constraint(equalToConstant: buttonHeight)
             ]}
         
-        mainScrollView.contentSize = CGSize(width: mainScrollView.bounds.width, height: mainScrollView.bounds.height + 100)
+        FBButton.mainCounter.text = "\(5)"
+        FBButton.socialLabel.text = "Facebook"
+        
+        view.add(subview: FBButton) { (v, p) in [
+            v.topAnchor.constraint(equalTo: IGButton.safeAreaLayoutGuide.topAnchor, constant: 0),
+            v.trailingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.trailingAnchor, constant: -8),
+            v.widthAnchor.constraint(equalToConstant: buttonWidth),
+            v.heightAnchor.constraint(equalToConstant: buttonHeight)
+            ]}
+        
+        TWTRButton.mainCounter.text = "\(5)"
+        TWTRButton.socialLabel.text = "Twitter"
+        
+        view.add(subview: TWTRButton) { (v, p) in [
+            v.topAnchor.constraint(equalTo: IGButton.safeAreaLayoutGuide.bottomAnchor, constant: 16),
+            v.leadingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            v.widthAnchor.constraint(equalToConstant: buttonWidth),
+            v.heightAnchor.constraint(equalToConstant: buttonHeight)
+            ]}
+        
+        SCButton.mainCounter.text = "\(0)"
+        SCButton.socialLabel.text = "Connect SoundCloud"
+        
+        view.add(subview: SCButton) { (v, p) in [
+            v.topAnchor.constraint(equalTo: TWTRButton.safeAreaLayoutGuide.topAnchor, constant: 0),
+            v.trailingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.trailingAnchor, constant: -8),
+            v.widthAnchor.constraint(equalToConstant: buttonWidth),
+            v.heightAnchor.constraint(equalToConstant: buttonHeight)
+            ]}
+        
+        overAllButton.mainCounter.text = "\(65)"
+        overAllButton.socialLabel.text = "Overall growth"
+        
+        view.add(subview: overAllButton) { (v, p) in [
+            v.topAnchor.constraint(equalTo: TWTRButton.safeAreaLayoutGuide.bottomAnchor, constant: 16),
+            v.trailingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.trailingAnchor, constant: 0),
+            v.leadingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.leadingAnchor, constant: 0),
+            v.heightAnchor.constraint(equalToConstant: buttonHeight - 25)
+            ]}
         
     }
-}
-
-
-extension SocialAnalyticsViewController: UIScrollViewDelegate{
-    
+        
 }
