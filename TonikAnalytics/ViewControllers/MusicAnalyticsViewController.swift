@@ -6,7 +6,7 @@ import Foundation
 
 class MusicAnalyticsViewController: UIViewController {
     
-    let graphView = GraphView()
+    let graphView = BarGraphView()
     let AppleMButton = GraphButton()
     let SpotifyButton = GraphButton()
     let YouTubeButton = GraphButton()
@@ -53,7 +53,7 @@ class MusicAnalyticsViewController: UIViewController {
     func setupButtons(){
         //TODO : Make Connectons to API to get real Data\
         
-        AppleMButton.mainCounter.text = "\(5)"
+        AppleMButton.mainCounter = 5
         AppleMButton.socialLabel.text = "Apple Music"
         
         view.add(subview: AppleMButton) { (v, p) in [
@@ -63,7 +63,7 @@ class MusicAnalyticsViewController: UIViewController {
             v.heightAnchor.constraint(equalToConstant: buttonHeight)
             ]}
         
-        SpotifyButton.mainCounter.text = "\(5)"
+        SpotifyButton.mainCounter = 5
         SpotifyButton.socialLabel.text = "Spotify"
         
         view.add(subview: SpotifyButton) { (v, p) in [
@@ -73,7 +73,7 @@ class MusicAnalyticsViewController: UIViewController {
             v.heightAnchor.constraint(equalToConstant: buttonHeight)
             ]}
         
-        YouTubeButton.mainCounter.text = "\(5)"
+        YouTubeButton.mainCounter = 5
         YouTubeButton.socialLabel.text = "YouTube"
         
         view.add(subview: YouTubeButton) { (v, p) in [
@@ -83,7 +83,7 @@ class MusicAnalyticsViewController: UIViewController {
             v.heightAnchor.constraint(equalToConstant: buttonHeight)
             ]}
         
-        SCButton.mainCounter.text = "\(0)"
+        SCButton.mainCounter = 5
         SCButton.socialLabel.text = "SoundCloud"
         
         view.add(subview: SCButton) { (v, p) in [
@@ -93,7 +93,7 @@ class MusicAnalyticsViewController: UIViewController {
             v.heightAnchor.constraint(equalToConstant: buttonHeight)
             ]}
         
-        overAllButton.mainCounter.text = "\(65)"
+        overAllButton.mainCounter = 5
         overAllButton.socialLabel.text = "Overall Growth"
         
         view.add(subview: overAllButton) { (v, p) in [

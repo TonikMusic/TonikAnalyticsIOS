@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */; };
-		2BA5ABDF234D15D800B09E6B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* GraphView.swift */; };
+		2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */; };
 		2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */; };
+		2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE2234F171000B09E6B /* BarGraphView.swift */; };
 		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
 		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
 		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
@@ -61,8 +62,9 @@
 
 /* Begin PBXFileReference section */
 		1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BA5ABDE234D15D800B09E6B /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 		2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphButton.swift; sourceTree = "<group>"; };
+		2BA5ABE2234F171000B09E6B /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonikAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,7 +212,8 @@
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
 				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
 				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
-				2BA5ABDE234D15D800B09E6B /* GraphView.swift */,
+				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
+				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
 			);
 			path = Views;
@@ -496,12 +499,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA5ABDF234D15D800B09E6B /* GraphView.swift in Sources */,
+				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
 				2BEB837C234BCE79002E61E4 /* UIViewExt.swift in Sources */,
 				2BEB8352234BC30D002E61E4 /* LoginSignUpViewController.swift in Sources */,
 				2BEB8378234BCD36002E61E4 /* UIImageExt.swift in Sources */,
+				2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */,
 				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
 				2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */,

@@ -1,8 +1,8 @@
 //
-//  GraphView.swift
+//  BarGraphView.swift
 //  TonikAnalytics
 //
-//  Created by Wesley Espinoza on 10/8/19.
+//  Created by Wesley Espinoza on 10/10/19.
 //  Copyright © 2019 HazeWritesCode. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Charts
 
-class GraphView: LineChartView{
+class BarGraphView: BarChartView{
     
     
     override init(frame: CGRect) {
@@ -20,7 +20,6 @@ class GraphView: LineChartView{
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.cornerRadius = 15
         self.backgroundColor = .white
-        self.dropShadow()
     }
     
     required init?(coder: NSCoder) {
