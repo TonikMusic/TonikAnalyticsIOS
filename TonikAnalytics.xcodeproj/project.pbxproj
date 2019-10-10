@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */; };
+		2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */; };
+		2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */; };
+		2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE2234F171000B09E6B /* BarGraphView.swift */; };
 		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
 		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
 		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
@@ -19,13 +22,9 @@
 		2BEB8354234BC32B002E61E4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */; };
 		2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */; };
 		2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8359234BC426002E61E4 /* SettingsViewController.swift */; };
-		2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */; };
 		2BEB835F234BC992002E61E4 /* FeaturedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */; };
 		2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */; };
 		2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8362234BCA3D002E61E4 /* LogoView.swift */; };
-		2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */; };
-		2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */; };
-		2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */; };
 		2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */; };
 		2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836D234BCBCD002E61E4 /* Button.swift */; };
 		2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836F234BCBEB002E61E4 /* Image.swift */; };
@@ -67,6 +66,9 @@
 
 /* Begin PBXFileReference section */
 		1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphButton.swift; sourceTree = "<group>"; };
+		2BA5ABE2234F171000B09E6B /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonikAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,13 +86,9 @@
 		2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAnalyticsViewController.swift; sourceTree = "<group>"; };
 		2BEB8359234BC426002E61E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCVCell.swift; sourceTree = "<group>"; };
 		2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCVCell.swift; sourceTree = "<group>"; };
 		2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		2BEB8362234BCA3D002E61E4 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
-		2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVCell.swift; sourceTree = "<group>"; };
-		2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCVCell.swift; sourceTree = "<group>"; };
-		2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
 		2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageCell.swift; sourceTree = "<group>"; };
 		2BEB836D234BCBCD002E61E4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		2BEB836F234BCBEB002E61E4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -219,16 +217,18 @@
 		2BEB835B234BC8EE002E61E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */,
 				2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */,
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
-				2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */,
-				2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */,
-				2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */,
 				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
 				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
+<<<<<<< HEAD
 				74C65DC1234C1CE7003058D5 /* SettingsCollectionViewCell.swift */,
 				743B4234234D972600C3D11C /* SettingsHeaderView.swift */,
+=======
+				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
+				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
+				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
+>>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -522,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
 				74C65DC5234D3A93003058D5 /* LoginSignUpService.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
@@ -529,6 +530,7 @@
 				743B4233234D3D4800C3D11C /* User.swift in Sources */,
 				2BEB8352234BC30D002E61E4 /* LoginSignUpViewController.swift in Sources */,
 				2BEB8378234BCD36002E61E4 /* UIImageExt.swift in Sources */,
+				2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */,
 				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
 				743B4235234D972600C3D11C /* SettingsHeaderView.swift in Sources */,
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
@@ -536,16 +538,18 @@
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
+<<<<<<< HEAD
 				74C65DC2234C1CE7003058D5 /* SettingsCollectionViewCell.swift in Sources */,
 				2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */,
 				2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */,
+=======
+				2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */,
+>>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 				2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */,
 				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
-				2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
-				2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
 				2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */,
 				2BEB8372234BCC17002E61E4 /* Label.swift in Sources */,

@@ -48,6 +48,7 @@ extension UIView {
         addSubview(subview)
         
         subview.activate(constraints: createConstraints(subview, self))
+        subview.layoutIfNeeded()
     }
     
     func add(subview: UIView, sendViewToBack: Bool, createConstraints: (_ view: UIView, _ parent: UIView) -> [NSLayoutConstraint]) {

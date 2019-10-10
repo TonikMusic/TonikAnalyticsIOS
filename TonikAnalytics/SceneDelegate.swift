@@ -24,7 +24,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBarController = TabBarController()
         tabBarController.selectedIndex = 0
+<<<<<<< HEAD
         /*  ****reminder delete before pushing***   */
+=======
+>>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
         userDefault.set(true, forKey: "isUserLoggedIn")
         userDefault.synchronize()
         

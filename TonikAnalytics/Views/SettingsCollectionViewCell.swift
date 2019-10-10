@@ -62,7 +62,7 @@ extension SettingsCollectionViewCell {
 extension SettingsCollectionViewCell {
     func layout() {
         layoutImageView()
-        layoutTitleLabel()
+        layoutTitleLabel()git 
         layoutTextLabel()
     }
     
