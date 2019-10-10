@@ -24,7 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBarController = TabBarController()
         tabBarController.selectedIndex = 0
-        userDefault.set(true, forKey: "isUserLoggedIn")
+        /****** delete after ********/
+        userDefault.set(false, forKey: "isUserLoggedIn")
         userDefault.synchronize()
         
         if userDefault.bool(forKey: "isUserLoggedIn") {

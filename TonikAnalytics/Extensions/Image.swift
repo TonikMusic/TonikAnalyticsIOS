@@ -6,9 +6,9 @@ import UIKit
 
 class CustomImage: UIImageView {
     
-    public static func image(name: String) -> UIImageView {
+    public static func image(name: String) -> CustomImage {
         let image = UIImage(named: name)
-        let imageView = UIImageView(image: image)
+        let imageView = CustomImage(image: image)
         imageView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false

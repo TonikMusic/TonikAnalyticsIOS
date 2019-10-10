@@ -41,6 +41,8 @@
 		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
 		74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* LoginSignUpService.swift */; };
+		74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */; };
+		74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */; };
 		CB91F7FF61D92847F55CD621 /* Pods_TonikAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */; };
 		D36D1D1DB8F248AB177A2411 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +107,8 @@
 		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D79EB5234F834900054D1E /* LoginSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpService.swift; sourceTree = "<group>"; };
+		74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
 		A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +221,8 @@
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
 				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
 				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
+				74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */,
+				74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */,
 				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
@@ -525,6 +531,7 @@
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
 				2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */,
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
+				74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */,
 				74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
@@ -534,6 +541,7 @@
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
+				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
 				2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */,
 				2BEB8372234BCC17002E61E4 /* Label.swift in Sources */,
