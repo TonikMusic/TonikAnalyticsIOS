@@ -221,14 +221,14 @@
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
 				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
 				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
-<<<<<<< HEAD
+
 				74C65DC1234C1CE7003058D5 /* SettingsCollectionViewCell.swift */,
 				743B4234234D972600C3D11C /* SettingsHeaderView.swift */,
-=======
+
 				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -538,13 +538,13 @@
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
-<<<<<<< HEAD
+
 				74C65DC2234C1CE7003058D5 /* SettingsCollectionViewCell.swift in Sources */,
 				2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */,
 				2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */,
-=======
+
 				2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 				2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */,
 				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
