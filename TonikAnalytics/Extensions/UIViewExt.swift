@@ -36,6 +36,12 @@ extension UIView {
         layer.shadowRadius = 8
     }
     
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
     
     // NOTE: This helper method creates and contraints to views
     func add(subview: UIView, createConstraints: (_ view: UIView, _ parent: UIView) -> [NSLayoutConstraint]) {
@@ -62,17 +68,9 @@ extension UIView {
     }
     
     
-    
-}
-
-
-extension UIView {
-    
-    func createView() -> UIView {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
+    func makeRound() {
+        layer
     }
     
 }
+

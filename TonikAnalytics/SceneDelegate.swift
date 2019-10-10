@@ -24,7 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBarController = TabBarController()
         tabBarController.selectedIndex = 0
-        userDefault.set(false, forKey: "isUserLoggedIn")
+        /*  ****reminder delete before pushing***   */
+        userDefault.set(true, forKey: "isUserLoggedIn")
         userDefault.synchronize()
         
         if userDefault.bool(forKey: "isUserLoggedIn") {

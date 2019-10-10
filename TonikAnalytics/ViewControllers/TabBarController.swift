@@ -31,7 +31,8 @@ class TabBarController: UITabBarController {
         
         
         // NOTE: settings view controller
-        let settings = SettingsViewController()
+        let layout = UICollectionViewFlowLayout()
+        let settings = SettingsViewController(collectionViewLayout: layout)
         var settingsIcon = UIImage(named: "settings")
         // NOTE: sets the icon to a scaled image with the original colors
         settingsIcon = settingsIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
@@ -42,7 +43,7 @@ class TabBarController: UITabBarController {
         let controllers = [home, profile, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-        self.selectedIndex = 0
+        self.selectedIndex = 2
         
         setNeedsStatusBarAppearanceUpdate()
     }
