@@ -22,6 +22,11 @@ class SocialAnalyticsViewController: UIViewController {
         setupGraph()
         setupButtons()
         
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        
+        graphView.setChart(months, unitsSold)
+        
     }
     
     
@@ -34,8 +39,13 @@ class SocialAnalyticsViewController: UIViewController {
             v.trailingAnchor.constraint(equalTo: p.safeAreaLayoutGuide.trailingAnchor, constant: -8),
             v.heightAnchor.constraint(equalToConstant: 300)
             ]}
-        graphView.backgroundColor = .white
-        graphView.dropShadow()
+        
+        
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
     }
     
     
@@ -87,11 +97,11 @@ class SocialAnalyticsViewController: UIViewController {
         
         view.add(subview: overAllButton) { (v, p) in [
             v.topAnchor.constraint(equalTo: TWTRButton.safeAreaLayoutGuide.bottomAnchor, constant: 16),
-            v.trailingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.trailingAnchor, constant: 0),
-            v.leadingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.leadingAnchor, constant: 0),
+            v.trailingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.trailingAnchor, constant: -8),
+            v.leadingAnchor.constraint(equalTo: graphView.safeAreaLayoutGuide.leadingAnchor, constant: 8),
             v.heightAnchor.constraint(equalToConstant: buttonHeight - 25)
             ]}
         
     }
-        
+    
 }

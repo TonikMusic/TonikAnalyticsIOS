@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class GraphButton: UIButton{
     var socialLabel = UILabel()
     var mainCounter = UILabel()
