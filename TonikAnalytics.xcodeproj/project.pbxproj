@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */; };
+		2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */; };
+		2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */; };
+		2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE2234F171000B09E6B /* BarGraphView.swift */; };
 		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
 		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
 		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
@@ -19,13 +22,9 @@
 		2BEB8354234BC32B002E61E4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */; };
 		2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */; };
 		2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8359234BC426002E61E4 /* SettingsViewController.swift */; };
-		2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */; };
 		2BEB835F234BC992002E61E4 /* FeaturedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */; };
 		2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */; };
 		2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8362234BCA3D002E61E4 /* LogoView.swift */; };
-		2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */; };
-		2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */; };
-		2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */; };
 		2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */; };
 		2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836D234BCBCD002E61E4 /* Button.swift */; };
 		2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB836F234BCBEB002E61E4 /* Image.swift */; };
@@ -40,6 +39,10 @@
 		2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */; };
 		2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */; };
 		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
+		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
+		74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* LoginSignUpService.swift */; };
+		74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */; };
+		74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */; };
 		CB91F7FF61D92847F55CD621 /* Pods_TonikAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */; };
 		D36D1D1DB8F248AB177A2411 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,9 @@
 
 /* Begin PBXFileReference section */
 		1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphButton.swift; sourceTree = "<group>"; };
+		2BA5ABE2234F171000B09E6B /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
 		2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonikAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,13 +86,9 @@
 		2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAnalyticsViewController.swift; sourceTree = "<group>"; };
 		2BEB8359234BC426002E61E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCVCell.swift; sourceTree = "<group>"; };
 		2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCVCell.swift; sourceTree = "<group>"; };
 		2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		2BEB8362234BCA3D002E61E4 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
-		2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVCell.swift; sourceTree = "<group>"; };
-		2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCVCell.swift; sourceTree = "<group>"; };
-		2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
 		2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageCell.swift; sourceTree = "<group>"; };
 		2BEB836D234BCBCD002E61E4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		2BEB836F234BCBEB002E61E4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -103,6 +105,10 @@
 		2BEB8386234BD898002E61E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74D79EB5234F834900054D1E /* LoginSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpService.swift; sourceTree = "<group>"; };
+		74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
 		A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +170,7 @@
 		2BEB831D234BBD12002E61E4 /* TonikAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				74D79EAA234F825000054D1E /* NetworkService */,
 				2BEB831E234BBD12002E61E4 /* AppDelegate.swift */,
 				2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */,
 				2BEB836C234BCB20002E61E4 /* Extensions */,
@@ -210,14 +217,15 @@
 		2BEB835B234BC8EE002E61E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2BEB835C234BC96A002E61E4 /* ArtistCVCell.swift */,
 				2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */,
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
-				2BEB8364234BCA70002E61E4 /* NewsCVCell.swift */,
-				2BEB8366234BCAA5002E61E4 /* NewsCardCVCell.swift */,
-				2BEB8368234BCACF002E61E4 /* NewsHeaderView.swift */,
 				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
 				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
+				74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */,
+				74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */,
+				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
+				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
+				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +260,15 @@
 				A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		74D79EAA234F825000054D1E /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				74D79EB3234F831D00054D1E /* User.swift */,
+				74D79EB5234F834900054D1E /* LoginSignUpService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		9D9B2064DABE55FEE6970CDA /* Frameworks */ = {
@@ -502,26 +519,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
 				2BEB837C234BCE79002E61E4 /* UIViewExt.swift in Sources */,
 				2BEB8352234BC30D002E61E4 /* LoginSignUpViewController.swift in Sources */,
 				2BEB8378234BCD36002E61E4 /* UIImageExt.swift in Sources */,
+				2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */,
 				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
+				74D79EB4234F831D00054D1E /* User.swift in Sources */,
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
 				2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */,
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
+				74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */,
+				74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
-				2BEB8365234BCA70002E61E4 /* NewsCVCell.swift in Sources */,
-				2BEB8369234BCACF002E61E4 /* NewsHeaderView.swift in Sources */,
+				2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */,
 				2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */,
 				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
-				2BEB8367234BCAA5002E61E4 /* NewsCardCVCell.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
-				2BEB835D234BC96A002E61E4 /* ArtistCVCell.swift in Sources */,
+				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
 				2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */,
 				2BEB8372234BCC17002E61E4 /* Label.swift in Sources */,
@@ -696,7 +716,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				DEVELOPMENT_TEAM = 2D25YZNJAC;
 				INFOPLIST_FILE = TonikAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,7 +735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				DEVELOPMENT_TEAM = 2D25YZNJAC;
 				INFOPLIST_FILE = TonikAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

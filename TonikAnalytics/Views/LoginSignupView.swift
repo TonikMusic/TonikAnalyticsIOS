@@ -148,7 +148,7 @@ class LoginSignUpView: UIView {
         containerView.addSubview(artistLabel)
         containerView.sendSubviewToBack(artistLabel)
         artistLabel.translatesAutoresizingMaskIntoConstraints = false
-        artistLabel.leadingAnchor.constraint(equalTo: toggleSwitch.trailingAnchor, constant: 0).isActive = true
+        artistLabel.leadingAnchor.constraint(equalTo: toggleSwitch.trailingAnchor, constant: 10).isActive = true
         artistLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -15).isActive = true
         artistLabel.widthAnchor.constraint(equalToConstant: 120).isActive = true
         
