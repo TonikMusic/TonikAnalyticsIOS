@@ -42,10 +42,10 @@ class TabBarController: UITabBarController {
         let controllers = [musicStats, socialSats, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-<<<<<<< HEAD
+
         self.selectedIndex = 2
-=======
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
+
         
         setNeedsStatusBarAppearanceUpdate()
     }
