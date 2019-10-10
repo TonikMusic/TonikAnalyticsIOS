@@ -27,7 +27,6 @@ class FeaturedCVCell: UICollectionViewCell {
         artistsCollectionView.delegate = self
         artistsCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         artistsCollectionView.backgroundColor = .white
-        artistsCollectionView.register(ArtistCVCell.self, forCellWithReuseIdentifier: ArtistCVCell.reUseId)
         // NOTE: add to parent view with constraints
         self.add(subview: artistsCollectionView) { (v, p) in [
             v.topAnchor.constraint(equalTo: p.safeAreaLayoutGuide.topAnchor, constant: 50),
@@ -57,7 +56,7 @@ extension FeaturedCVCell: UICollectionViewDataSource {
     // NOTE: what kind of cell to return
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = artistsCollectionView.dequeueReusableCell(withReuseIdentifier: ArtistCVCell.reUseId, for: indexPath) as! ArtistCVCell
+        let cell = UICollectionViewCell()
         
         cell.layer.cornerRadius = 15
         return cell

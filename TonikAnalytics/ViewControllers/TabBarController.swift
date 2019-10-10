@@ -9,25 +9,24 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         
         // NOTE: homeview controller
-        let home = MusicAnalyticsViewController()
+        let musicStats = MusicAnalyticsViewController()
         var homeIcon = UIImage(named: "home")
+        musicStats.view.backgroundColor = .white
         homeIcon = homeIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        home.tabBarItem = UITabBarItem(title: "Home", image: homeIcon, tag: 0)
-        let whiteLogo = UIImage(named: "logo-white")?.scaled(with: 0.05)
-        let logoView = UIImageView(image: whiteLogo)
-        home.navigationItem.titleView = logoView
+        musicStats.tabBarItem = UITabBarItem(title: "Music", image: homeIcon, tag: 0)
+        musicStats.navigationItem.title = "Music Analytics"
         
         
         
         
         
         // NOTE: profile view controller
-        let profile = SocialAnalyticsViewController()
+        let socialSats = SocialAnalyticsViewController()
         var profileIcon = UIImage(named: "profile")
         profileIcon = profileIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        profile.view.backgroundColor = .white
-        profile.tabBarItem = UITabBarItem(title: "Profile", image: profileIcon, tag: 1)
-        profile.title = "profile"
+        socialSats.view.backgroundColor = .white
+        socialSats.tabBarItem = UITabBarItem(title: "Social", image: profileIcon, tag: 1)
+        socialSats.navigationItem.title = "Social Analytics"
         
         
         // NOTE: settings view controller
@@ -39,12 +38,15 @@ class TabBarController: UITabBarController {
         settings.tabBarItem = UITabBarItem(title: "Settings", image:settingsIcon, tag: 2)
         settings.title = "Settings"
         // NOTE: set up of the TabBarController and adding the viewControllers
-        let controllers = [home, profile, settings]
+        let controllers = [musicStats, socialSats, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-        self.selectedIndex = 0
         
         setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.selectedViewController = viewControllers?[1]
     }
 }
     
