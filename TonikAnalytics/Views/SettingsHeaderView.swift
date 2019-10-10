@@ -23,7 +23,7 @@ class SettingsHeaderView: UICollectionReusableView {
     }
     
     func setup(){
-        header.font = UIFont.boldSystemFont(ofSize: 20)
+        header.font = UIFont.boldSystemFont(ofSize: 18)
         
         self.add(subview: header) { (v, p) in [
             v.topAnchor.constraint(equalTo: p.topAnchor, constant: 15),

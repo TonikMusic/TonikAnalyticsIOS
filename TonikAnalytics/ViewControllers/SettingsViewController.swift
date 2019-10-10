@@ -4,6 +4,12 @@
 import UIKit
 import Foundation
 
+struct SettingsContent {
+    let imageName: String!
+    let title: String!
+    let text: String!
+}
+
 class SettingsViewController: UICollectionViewController {
     enum Sections: String {
         case subscription = ""
@@ -16,7 +22,14 @@ class SettingsViewController: UICollectionViewController {
         }
     }
     
-    
+    let settingsContent: [SettingsContent] = [
+    SettingsContent(imageName: "subscription", title: "Monthly Subscription", text: "Apply for monthly subsciption for more features"),
+    SettingsContent(imageName: "faq", title: "FAQ", text: "Maybe we've answered your question, Here's our FAQs"),
+    SettingsContent(imageName: "notification", title: "Push Notification", text: ""),
+    SettingsContent(imageName: "email", title: "Update Email", text: ""),
+    SettingsContent(imageName: "password", title: "Change Password", text: ""),
+    SettingsContent(imageName: "logout", title: "Logout", text: ""),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +39,11 @@ class SettingsViewController: UICollectionViewController {
     }
 
     private func setupCollectionViewComponents() {
-        collectionView.backgroundColor = #colorLiteral(red: 0.4, green: 0.137254902, blue: 0.8196078431, alpha: 1)
+        collectionView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(SettingsCollectionViewCell.self, forCellWithReuseIdentifier: SettingsCollectionViewCell.cellId)
         collectionView.register(SettingsHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SettingsHeaderView.cellId)
+        
         
     }
     
@@ -76,26 +90,15 @@ extension SettingsViewController {
         
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SettingsCollectionViewCell.cellId, for: indexPath) as! SettingsCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: settingsContent[indexPath.row].imageName)
+        cell.titleLabel.text = settingsContent[indexPath.row].title
+        cell.textLabel.text = settingsContent[indexPath.row].text
+        
     
-        switch indexPath.section {
-        case 0:
-            cell.roundCorners(corners: [.allCorners], radius: 10)
-        case 1:
-            cell.roundCorners(corners: [.topLeft, .topRight], radius: 10)
-//
-//        case 2:
-//            cell.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 10)
-//        case 3:
-//            cell.roundCorners(corners: [.topLeft, .topRight], radius: 10)
-//        case 5:
-//            cell.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 10)
-        default:
-            return cell
-        }
-        
-        
         return cell
     }
 }
@@ -115,13 +118,13 @@ extension SettingsViewController: UICollectionViewDelegateFlowLayout {
         case .subscription:
             return 1
         case .helpandsupport:
-            return 2
+            return 1
         case .account:
             return 3
         case .notification:
-            return 4
+            return 1
         case .others:
-            return 2
+            return 1
         }
         
     }
