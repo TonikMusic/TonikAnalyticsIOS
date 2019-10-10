@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B345D1741CB39E724FD665897B6800 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0419772A87B16DB7DCF405A9E77D671F /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95630497A067134C80E536EE9C056E98 /* Protector.swift */; };
 		06507A26118BA5ACFBBC8C225776920E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A210AA0D506045215102E1A6B94C67C /* Validation.swift */; };
@@ -94,7 +93,6 @@
 			remoteInfo = Alamofire;
 		};
 		3C9F4800E76B6A877D5A081ED1D8B75D /* PBXContainerItemProxy */ = {
-=======
 		00E79EA3D9F8927767ACE23F24A76BA0 /* ChartDataRendererBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CF528E511A7173252FC56EB8A1C81 /* ChartDataRendererBase.swift */; };
 		029795699E298635194F12496747A6A9 /* BarChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FF0D1BE9B42621CBDA3EF9E405135 /* BarChartDataProvider.swift */; };
 		04430D9032A6AB7FEC9A75A63CA00692 /* LegendRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E72AFB222BE43759DFEB9DB1EAC80 /* LegendRenderer.swift */; };
@@ -277,7 +275,6 @@
 			remoteInfo = Charts;
 		};
 		1046129DCB404A3BEDC3857F5572612F /* PBXContainerItemProxy */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -298,11 +295,8 @@
 			remoteGlobalIDString = 0A753E61A5B99991220F8EF80090DD8E;
 			remoteInfo = "Pods-TonikAnalytics";
 		};
-<<<<<<< HEAD
 		9D4226C4A713AC0F0D88BD444E2E59C4 /* PBXContainerItemProxy */ = {
-=======
 		A36CD2EBB496A942D9054E49F744D41A /* PBXContainerItemProxy */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -312,14 +306,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		0001B34CA0AF51177CE593192DD4C53C /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		000C68E666468A43D44B145E7863E324 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		00F3944E7EF7967BAF1B2B4C9CA11543 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		0215953C0EDC8977A00E5F1617A64DFE /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-=======
 		022B682F16A5C00BD476816C2BFBE86C /* AnimatedMoveViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMoveViewJob.swift; path = Source/Charts/Jobs/AnimatedMoveViewJob.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		0300324521C7EF51EBFEA2F82E7AC536 /* Pods-TonikAnalytics-TonikAnalyticsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TonikAnalytics-TonikAnalyticsUITests-frameworks.sh"; sourceTree = "<group>"; };
 		037D73EEF76DF93E229561407DB0711B /* Pods_TonikAnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TonikAnalyticsTests.framework; path = "Pods-TonikAnalyticsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AF78E94F0F6E0B6212479B4BF3B9C7 /* ILineScatterCandleRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineScatterCandleRadarChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineScatterCandleRadarChartDataSet.swift; sourceTree = "<group>"; };
@@ -330,7 +321,6 @@
 		09032BF9350D01712460F0A381EB35D7 /* Pods-TonikAnalyticsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalyticsTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0A624139C4A76E3ADF7E87B9B6A7E5C3 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		0AA0272F6FB91C91BF15F5F9F2D30BEA /* Pods-TonikAnalyticsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TonikAnalyticsTests.modulemap"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		0B47CD4EE62F682465116F1256CF9778 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		0C41B34A977A82F83624D0B5FEFF31FE /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
 		0E796A5A8B4D817F6A570585B1984260 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
@@ -349,7 +339,6 @@
 		3D84FD5E032368FF6A787071404286F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		407D9546F5DA039F2CA96C7721874CB0 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		4289890911465A1C311791C454A7BC1F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-=======
 		0B7F5BDA2E72A7F93A3F7C32C6EEBDC6 /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Source/Charts/Utils/Fill.swift; sourceTree = "<group>"; };
 		0C2407A288BC2E5A73B6D5752ABB01BD /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
 		0CB6145D828C86D2CBADE21CFF263FEB /* BarLineScatterCandleBubbleRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleRenderer.swift; path = Source/Charts/Renderers/BarLineScatterCandleBubbleRenderer.swift; sourceTree = "<group>"; };
@@ -393,16 +382,13 @@
 		3EAC7EF15DDF2066FCD0D50CF5A81229 /* ChartViewBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartViewBase.swift; path = Source/Charts/Charts/ChartViewBase.swift; sourceTree = "<group>"; };
 		3FC15B9F47EF8D6A7489ECF0524DA5E2 /* ZoomViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomViewJob.swift; path = Source/Charts/Jobs/ZoomViewJob.swift; sourceTree = "<group>"; };
 		419D56D9EAAFB7226A67B376454EECE2 /* ComponentBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComponentBase.swift; path = Source/Charts/Components/ComponentBase.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		44ACF26CFDA396A313D69434370DED8F /* Pods-TonikAnalytics-TonikAnalyticsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalytics-TonikAnalyticsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4656AF371357C2F0C8EE7818CEEC1E64 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		468F993870A8A61CEA2C39F426AE8AE9 /* Pods_TonikAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TonikAnalytics.framework; path = "Pods-TonikAnalytics.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
 		4A0AE0FA0328E58BC596F3E1CC5038B8 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
 		4A943D2F937BDDF0239E402EFE58838C /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		4B7C5169DBCF2C19416C2DF46D3FDC06 /* Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h"; sourceTree = "<group>"; };
 		4DD3ED8C7EE1CB6DA43651AC84BE460B /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-=======
 		47E60A97D5F79708163C95C9078D120A /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.swift; path = Source/Charts/Utils/Platform.swift; sourceTree = "<group>"; };
 		4942B21B5B77CB9A88F18F968C2CBFC0 /* Charts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Charts.modulemap; sourceTree = "<group>"; };
 		499A2B8E2501DA2816E76845271D5328 /* TriangleShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangleShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/TriangleShapeRenderer.swift; sourceTree = "<group>"; };
@@ -410,11 +396,9 @@
 		4A943D2F937BDDF0239E402EFE58838C /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		4B7C5169DBCF2C19416C2DF46D3FDC06 /* Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h"; sourceTree = "<group>"; };
 		4BE58A44A184C8B028C55F4B24CB6DAA /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = Source/Charts/Highlight/Range.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		4E1356065E7802CD3D7F15ABA9B24D94 /* Pods-TonikAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TonikAnalytics.modulemap"; sourceTree = "<group>"; };
 		4E21ADE1749135875C8233EC0BAE5905 /* IHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHighlighter.swift; path = Source/Charts/Highlight/IHighlighter.swift; sourceTree = "<group>"; };
 		4E4F10939D629B1D52EEA483768A2B62 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; path = "Pods-TonikAnalytics-TonikAnalyticsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
 		52577299E9D1FBC898D12E4D75D4D326 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		52D51AE5FCC26A2690EFD135C55D0C6E /* Pods-TonikAnalytics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalytics-Info.plist"; sourceTree = "<group>"; };
 		54B859BD3DE6272F249F21101DEF783B /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
@@ -422,7 +406,6 @@
 		569DD9215B6825FEA7579AA1A68E382E /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		606950CD29757DFCF5C1D3E5248F19FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-=======
 		4E56DB6FE64AC90793292DD10F19D053 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		500B6F7A7D14C955E8006D31CE75BE80 /* BarLineScatterCandleBubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift; sourceTree = "<group>"; };
 		5027436772D38A39B10E3CA41111A7D1 /* ChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataProvider.swift; path = Source/Charts/Interfaces/ChartDataProvider.swift; sourceTree = "<group>"; };
@@ -444,11 +427,9 @@
 		6088EE3FA100282F3D0133B0FD03ED83 /* LineChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartRenderer.swift; path = Source/Charts/Renderers/LineChartRenderer.swift; sourceTree = "<group>"; };
 		60C6F19015D9FA8015B13E51C87CDC14 /* ICandleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICandleChartDataSet.swift; path = Source/Charts/Data/Interfaces/ICandleChartDataSet.swift; sourceTree = "<group>"; };
 		616FF5E1F4B45AF7BD035A976282EDF6 /* BarChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartRenderer.swift; path = Source/Charts/Renderers/BarChartRenderer.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		6237716C0C9103CD922B29D08B7F9463 /* Pods-TonikAnalyticsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalyticsTests-Info.plist"; sourceTree = "<group>"; };
 		62AB7D1B6AF500B511D17040F1696F81 /* CombinedChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartRenderer.swift; path = Source/Charts/Renderers/CombinedChartRenderer.swift; sourceTree = "<group>"; };
 		63191F6B6DB180D6A2ED5A0135EC0FE5 /* Pods-TonikAnalytics-TonikAnalyticsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TonikAnalytics-TonikAnalyticsUITests.modulemap"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		657B60A20FA04D5658CCD2E8E0C427E3 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		6A594C34B5962F845AD9FED029312B94 /* Pods-TonikAnalytics-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TonikAnalytics-frameworks.sh"; sourceTree = "<group>"; };
 		749C2E4E146D6577D74C198D16E15016 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
@@ -469,7 +450,6 @@
 		A2025C4C34B0B217C7E68CC8BF48AB2A /* Pods-TonikAnalytics-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TonikAnalytics-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4FA3315550BED81905A3AAA2BFEAC80 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		A5E5E59C46DBB76690732E7C4B640F79 /* Pods-TonikAnalytics-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalytics-acknowledgements.plist"; sourceTree = "<group>"; };
-=======
 		63B926D13815512D604F62203C753DD9 /* YAxisRendererHorizontalBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAxisRendererHorizontalBarChart.swift; path = Source/Charts/Renderers/YAxisRendererHorizontalBarChart.swift; sourceTree = "<group>"; };
 		65D5E8CE16DF61DB682F1C2F672F2795 /* IShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/IShapeRenderer.swift; sourceTree = "<group>"; };
 		660FCB4E4D1C84811717D9276C66A232 /* ChartUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartUtils.swift; path = Source/Charts/Utils/ChartUtils.swift; sourceTree = "<group>"; };
@@ -522,12 +502,10 @@
 		A5300BE55CD230643FF38E44263026C9 /* MoveViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveViewJob.swift; path = Source/Charts/Jobs/MoveViewJob.swift; sourceTree = "<group>"; };
 		A5E5E59C46DBB76690732E7C4B640F79 /* Pods-TonikAnalytics-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TonikAnalytics-acknowledgements.plist"; sourceTree = "<group>"; };
 		A634994C46805FB2A34E29E328F770A8 /* LineChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartDataProvider.swift; path = Source/Charts/Interfaces/LineChartDataProvider.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1A77A7D84A9324559AEC12B9BF296D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		AFEDF49FC1585888E9696744D1384D96 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		B0557268C8D134BA25F5BF21AB82496F /* Pods-TonikAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		B114C43A1AD7483D7E84FA72A5709586 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		B1EB823085A7ECE6FB36EAA1AEF7C06A /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		B4BBE9FBFFA26F98F19CBE95006AC13C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
@@ -537,7 +515,6 @@
 		C620DF28BE89F5AD6F3E2F883B05B4A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB772C10D6EEF7C0D93EFD2B1933335B /* Pods-TonikAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		CF10F88BF85F2EF3D2CE927AC3D1E316 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
-=======
 		B1FD8D08CDD13AC1842B0AA4E1C31FA3 /* ChartBaseDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartBaseDataSet.swift; path = Source/Charts/Data/Implementations/ChartBaseDataSet.swift; sourceTree = "<group>"; };
 		B2E268C532DE6F533D836E056FD58E2D /* DataApproximator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataApproximator.swift; path = Source/Charts/Filters/DataApproximator.swift; sourceTree = "<group>"; };
 		B3D0D7103A28522F23ED76B38E8E1E62 /* RadarChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/RadarChartDataEntry.swift; sourceTree = "<group>"; };
@@ -567,14 +544,12 @@
 		D1C65E7EE6AEFC44E7AF66474E7501C3 /* RadarChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartData.swift; path = Source/Charts/Data/Implementations/Standard/RadarChartData.swift; sourceTree = "<group>"; };
 		D223092A6D1932A07E174917329730B7 /* CandleStickChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleStickChartView.swift; path = Source/Charts/Charts/CandleStickChartView.swift; sourceTree = "<group>"; };
 		D405166D6A8E8D141A6FC1191CFDACC0 /* ChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/ChartDataSet.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
 		D4D39B7C63BAC58363BCA0F2BADF5A3B /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D657753505FA5F1A16B85B2363660CC7 /* BubbleChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartDataEntry.swift; sourceTree = "<group>"; };
 		D6F137BF2649A49AF901A724911F38E6 /* RadarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarHighlighter.swift; path = Source/Charts/Highlight/RadarHighlighter.swift; sourceTree = "<group>"; };
 		D72090D23AA0338AF179DE2672AFEF10 /* PieChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartData.swift; path = Source/Charts/Data/Implementations/Standard/PieChartData.swift; sourceTree = "<group>"; };
 		D76F10756C33B1E0F4511880107288C4 /* Pods-TonikAnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TonikAnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D79CACC0DA6D75188139B64997C4EEB8 /* Pods-TonikAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TonikAnalytics-umbrella.h"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		D86A6F026B3EF64ACCE08113EA541A1E /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
 		DFBAF054CB606B8A4F7A1856995F5CFB /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
 		E008944214030EED7DBB6D381F527D7D /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
@@ -586,7 +561,6 @@
 		EF89D9A9A31F23C786971644BE5DE7B2 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		F0FC43E2F811E3E478771B1162166160 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		F17A45836B46E949B96A55EB9D5A3EAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-=======
 		DBC64C9FAE596CA2502DEB490C2C691D /* Charts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Charts-Info.plist"; sourceTree = "<group>"; };
 		DD1FBD68AC77C570BF724ED08F5D0C4A /* CandleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/CandleChartDataSet.swift; sourceTree = "<group>"; };
 		DE67DDE1C51D5F34DAED7AE2DA040C59 /* CombinedChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartView.swift; path = Source/Charts/Charts/CombinedChartView.swift; sourceTree = "<group>"; };
@@ -600,7 +574,7 @@
 		EDB0B3C4E3477AAC23CFB67A7B4CFAA5 /* BarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BarChartDataSet.swift; sourceTree = "<group>"; };
 		EDF0067982838FE47CC5CFA3150B6D74 /* ScatterChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartData.swift; path = Source/Charts/Data/Implementations/Standard/ScatterChartData.swift; sourceTree = "<group>"; };
 		F05AC1A6965CAA9DADDD6540DC742D73 /* ChartColorTemplates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColorTemplates.swift; path = Source/Charts/Utils/ChartColorTemplates.swift; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 		F183660823FF5E2311ADA3264B22E328 /* Pods-TonikAnalyticsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TonikAnalyticsTests-umbrella.h"; sourceTree = "<group>"; };
 		F1CF37C8FE2E05DF88D0C3479B1FFE70 /* MarkerImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerImage.swift; path = Source/Charts/Components/MarkerImage.swift; sourceTree = "<group>"; };
 		F206FA1AD7FFBD1BD2780CBBDA61BE02 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
@@ -608,15 +582,15 @@
 		F320878CBC1BFE96B8F19C3D1113AAF1 /* ScatterChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartDataProvider.swift; path = Source/Charts/Interfaces/ScatterChartDataProvider.swift; sourceTree = "<group>"; };
 		F498207E95396A231EA0D36B3F395A95 /* IBarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBarChartDataSet.swift; path = Source/Charts/Data/Interfaces/IBarChartDataSet.swift; sourceTree = "<group>"; };
 		F4BE431902C8BFFC865A9043EB6595DD /* Pods-TonikAnalytics-TonikAnalyticsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TonikAnalytics-TonikAnalyticsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-<<<<<<< HEAD
+
 		F5AA4DB5E0654C9F53774FFD3505B420 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		F66311083D236369501E574D9EC8AD7E /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		F936FD19E742A954592BF2B6CA579399 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-=======
+
 		F5C82E6CA31CEAF539C381873E84E215 /* ChartAnimationEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartAnimationEasing.swift; path = Source/Charts/Animation/ChartAnimationEasing.swift; sourceTree = "<group>"; };
 		F8BA6C8CEE4AAE3AB8F085331D9D973D /* Platform+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Platform+Accessibility.swift"; path = "Source/Charts/Utils/Platform+Accessibility.swift"; sourceTree = "<group>"; };
 		FE7E4F85B45C495B141E18B4D8E828E0 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -644,7 +618,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		4F995F1FC3DDFE8A366BA49F94D466CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,7 +644,7 @@
 			files = (
 				97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */,
 				BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */,
-=======
+
 		57A5B2D515B747A4CFA2A9FBAF5720E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,16 +658,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				83012237F485708B20F744592132C38C /* Foundation.framework in Frameworks */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
+
 		0C4CD66FB2CD919B2CD7824C01F924F8 /* Support Files */ = {
-=======
+
 		010780821DCA15993E25D4E73F9DEB84 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,7 +683,7 @@
 			sourceTree = "<group>";
 		};
 		216D11D6253026459814863746CC99A1 /* iOS */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXGroup;
 			children = (
 				79764DC9BC1385324FE6648059A53447 /* IQKeyboardManagerSwift.modulemap */,
@@ -742,7 +716,7 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
+
 		41FB6A8CBDA98EE64B87DA5155332119 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,7 +735,7 @@
 				EE27F7B054B58989FC19542AFE4E7D8B /* IQKeyboardManager.bundle */,
 			);
 			name = Resources;
-=======
+
 		422C8736C7B62FC57483A77BE35B208D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,7 +760,7 @@
 				037D73EEF76DF93E229561407DB0711B /* Pods_TonikAnalyticsTests.framework */,
 			);
 			name = Products;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			sourceTree = "<group>";
 		};
 		644C11B8CFC9765DBCAF70A440E7AD7E /* Pods-TonikAnalytics-TonikAnalyticsUITests */ = {
@@ -806,7 +780,7 @@
 			path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
+
 		75F5DCAA94F5D03947AFF8EE3811AE41 /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -884,7 +858,7 @@
 				037D73EEF76DF93E229561407DB0711B /* Pods_TonikAnalyticsTests.framework */,
 			);
 			name = Products;
-=======
+
 		75D61264CE81EB05412582F2E0687481 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -1036,7 +1010,7 @@
 			);
 			name = Charts;
 			path = Charts;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			sourceTree = "<group>";
 		};
 		8E38B41EC32263C566FFA59EDBB76E99 /* Pods-TonikAnalytics */ = {
@@ -1056,9 +1030,9 @@
 			path = "Target Support Files/Pods-TonikAnalytics";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
+
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
-=======
+
 		A518851E6663AE53FD2B8DAD292F8C1E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1094,7 +1068,7 @@
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXGroup;
 			children = (
 				41FB6A8CBDA98EE64B87DA5155332119 /* iOS */,
@@ -1102,7 +1076,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
+
 		C7F9695374E6AEFAD19C73E4A6EE7884 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,7 +1100,7 @@
 				8DE9C6CE73164B4E2B11ACD568C20199 /* Products */,
 				283AF2B643308A8AB3F3B8EE596A441B /* Targets Support Files */,
 			);
-=======
+
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -1145,7 +1119,7 @@
 				B991719D7F4706BC4F2B78E5D02D2DD9 /* IQKeyboardManagerSwift */,
 			);
 			name = Pods;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			sourceTree = "<group>";
 		};
 		FDE0EDD0013171EF6FA6E4A157585382 /* Pods-TonikAnalyticsTests */ = {
@@ -1167,19 +1141,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-<<<<<<< HEAD
+
 		16525C82C42DA72B43B33C56961056BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				313F55E774BBBEA039017DFE534D16A5 /* Pods-TonikAnalytics-umbrella.h in Headers */,
-=======
+
 		107137B1A4A524E4E2B48D025538EE81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0C9A9EA81F3DD0844989664A69824E1 /* Pods-TonikAnalytics-TonikAnalyticsUITests-umbrella.h in Headers */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1191,19 +1165,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		3284C20472AFF6A63A7094CE20A5E3D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3EC52C8A6BABE4066E466519E31C3E03 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
-=======
+
 		743CD2ADBE638626EF601010981F158A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06D9C7714F8B1CE9461A067EE1EA47D9 /* Pods-TonikAnalyticsTests-umbrella.h in Headers */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,32 +1210,32 @@
 /* Begin PBXNativeTarget section */
 		0A753E61A5B99991220F8EF80090DD8E /* Pods-TonikAnalytics */ = {
 			isa = PBXNativeTarget;
-<<<<<<< HEAD
+
 			buildConfigurationList = E8EADDD26EA59E84CC75E4267ACAFE6B /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics" */;
 			buildPhases = (
 				16525C82C42DA72B43B33C56961056BB /* Headers */,
 				DCA63921C6C90C6500C8D92BCEE104FD /* Sources */,
 				4F995F1FC3DDFE8A366BA49F94D466CD /* Frameworks */,
 				9D98E42503C30B21396DFFDE3058029C /* Resources */,
-=======
+
 			buildConfigurationList = ECC16EBAA5A2F3BA64B7A96BD792D5D0 /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics" */;
 			buildPhases = (
 				95A6EFD9D08C36DB262E765EC70F3ED9 /* Headers */,
 				6448C672505AD34F607279946497F787 /* Sources */,
 				0705F9BDE943E8AC9B4C8D8F1969D30C /* Frameworks */,
 				04DB32CFE17967E55C1606E80B9B5260 /* Resources */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
+
 				5C0B8192295A05ACFBD64E24C7E30D35 /* PBXTargetDependency */,
 				2158040703E955DBD3A8039B0B76670F /* PBXTargetDependency */,
-=======
+
 				86703209B7FA0240E4B4C861AD6FE7F2 /* PBXTargetDependency */,
 				BE99A3401512141E2E7016BAA7BF6887 /* PBXTargetDependency */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			name = "Pods-TonikAnalytics";
 			productName = "Pods-TonikAnalytics";
@@ -1289,32 +1263,32 @@
 		};
 		6AD1FA6B6DEDB248F8AF1692F2285397 /* Pods-TonikAnalytics-TonikAnalyticsUITests */ = {
 			isa = PBXNativeTarget;
-<<<<<<< HEAD
+
 			buildConfigurationList = A30F49BFF0DC668AA5BDECB9ED62362E /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics-TonikAnalyticsUITests" */;
 			buildPhases = (
 				2F6EF2A60EB27BFF61A00FF15EEECA6D /* Headers */,
 				832AF5374237FA000B28A194A6A1E3C6 /* Sources */,
 				4CC387234B789FE4F4E653C2C336ADB0 /* Frameworks */,
 				34C148C2C83AFCD6DC9BE509F3D61474 /* Resources */,
-=======
+
 			buildConfigurationList = 9C077BE25F4A373C6AA3E46320DD1874 /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics-TonikAnalyticsUITests" */;
 			buildPhases = (
 				107137B1A4A524E4E2B48D025538EE81 /* Headers */,
 				518A062096F77800A539DEE210CEC346 /* Sources */,
 				57A5B2D515B747A4CFA2A9FBAF5720E8 /* Frameworks */,
 				60B2E59946C6F098296EB4343DE9880F /* Resources */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
+
 				5469CC5E30EB2528795B23DC8C10A16B /* PBXTargetDependency */,
 				E7685B277FFD215634B41D5AFA88E61A /* PBXTargetDependency */,
-=======
+
 				E8DDC5AED64C8EB241D87A633ECB31BD /* PBXTargetDependency */,
 				C9A8DE304BC17B247D7BC8B1C2EB78AB /* PBXTargetDependency */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			name = "Pods-TonikAnalytics-TonikAnalyticsUITests";
 			productName = "Pods-TonikAnalytics-TonikAnalyticsUITests";
@@ -1339,7 +1313,7 @@
 			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-<<<<<<< HEAD
+
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -1348,7 +1322,7 @@
 				7349DB0E9BEBE664696F1DCC25226F26 /* Sources */,
 				8B0D8633F410345F93419B8C3D7B6916 /* Frameworks */,
 				28FC0024B79C28A420D7C4FEBB9E3AEB /* Resources */,
-=======
+
 		BF03B0B2B8B052092CB5F90CC5FB3757 /* Charts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 760B5D8C7A82F6DCA492088B078934A1 /* Build configuration list for PBXNativeTarget "Charts" */;
@@ -1357,21 +1331,21 @@
 				4A5AB95B7C2FFAD1E396A5BD7357494E /* Sources */,
 				BF90AEF47A67BAD5BD5CA0185B04114F /* Frameworks */,
 				B5196CBFE206D7D39137320719EC8265 /* Resources */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-<<<<<<< HEAD
+
 			name = Alamofire;
 			productName = Alamofire;
 			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
-=======
+
 			name = Charts;
 			productName = Charts;
 			productReference = A1C1B977ED8804E8AEEC884E7359EE58 /* Charts.framework */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1391,19 +1365,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-<<<<<<< HEAD
+
 			productRefGroup = 8DE9C6CE73164B4E2B11ACD568C20199 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
-=======
+
 			productRefGroup = 47A7E68554F038526E4472B66418774F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BF03B0B2B8B052092CB5F90CC5FB3757 /* Charts */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
 				0A753E61A5B99991220F8EF80090DD8E /* Pods-TonikAnalytics */,
 				6AD1FA6B6DEDB248F8AF1692F2285397 /* Pods-TonikAnalytics-TonikAnalyticsUITests */,
@@ -1413,9 +1387,9 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-<<<<<<< HEAD
+
 		28FC0024B79C28A420D7C4FEBB9E3AEB /* Resources */ = {
-=======
+
 		04DB32CFE17967E55C1606E80B9B5260 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1424,25 +1398,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3FE6BD24F8EC4E53E8CAB3C04F3A6884 /* Resources */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		34C148C2C83AFCD6DC9BE509F3D61474 /* Resources */ = {
-=======
+
 		588BCF75E1BE19BAEDA5347AFE8AB49A /* Resources */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		3FE6BD24F8EC4E53E8CAB3C04F3A6884 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1452,20 +1426,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		588BCF75E1BE19BAEDA5347AFE8AB49A /* Resources */ = {
-=======
+
 		60B2E59946C6F098296EB4343DE9880F /* Resources */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		9D98E42503C30B21396DFFDE3058029C /* Resources */ = {
-=======
+
 		B5196CBFE206D7D39137320719EC8265 /* Resources */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1483,7 +1457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
+
 		7349DB0E9BEBE664696F1DCC25226F26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1529,7 +1503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB6BB4858EA8C67C2919E1CEB1F2517 /* Pods-TonikAnalytics-TonikAnalyticsUITests-dummy.m in Sources */,
-=======
+
 		4A5AB95B7C2FFAD1E396A5BD7357494E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1687,7 +1661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A3CC3CDFE3E7AD9F2DFADFCD1057B0 /* Pods-TonikAnalytics-dummy.m in Sources */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1726,7 +1700,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-<<<<<<< HEAD
+
 		2158040703E955DBD3A8039B0B76670F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
@@ -1744,13 +1718,13 @@
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 38704CD1818209A232B1F4B28F90666C /* PBXContainerItemProxy */;
-=======
+
 		86703209B7FA0240E4B4C861AD6FE7F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
 			target = BF03B0B2B8B052092CB5F90CC5FB3757 /* Charts */;
 			targetProxy = 17653980D770D87875C5D32C560A4CFC /* PBXContainerItemProxy */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 		};
 		B8D26E3423FFD892AED6840EDBDC1313 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1758,13 +1732,13 @@
 			target = 0A753E61A5B99991220F8EF80090DD8E /* Pods-TonikAnalytics */;
 			targetProxy = 6B32F433E6FEB1645EE3056F1D543066 /* PBXContainerItemProxy */;
 		};
-<<<<<<< HEAD
+
 		E7685B277FFD215634B41D5AFA88E61A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
 			targetProxy = 3C9F4800E76B6A877D5A081ED1D8B75D /* PBXContainerItemProxy */;
-=======
+
 		BE99A3401512141E2E7016BAA7BF6887 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
@@ -1782,7 +1756,7 @@
 			name = Charts;
 			target = BF03B0B2B8B052092CB5F90CC5FB3757 /* Charts */;
 			targetProxy = 0C4CE57C1C9E749F6B4B4076EB1C69F5 /* PBXContainerItemProxy */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 		};
 /* End PBXTargetDependency section */
 
@@ -1922,15 +1896,15 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
+
 		66341011A7F1334685372DBA80A7D9AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB772C10D6EEF7C0D93EFD2B1933335B /* Pods-TonikAnalytics.release.xcconfig */;
-=======
+
 		2EC2410B6F0C898E6537FC770AB94087 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4D39B7C63BAC58363BCA0F2BADF5A3B /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1967,11 +1941,11 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
+
 		9427C8024A8A7CB02296BFB7489D39A8 /* Release */ = {
-=======
+
 		33D1D43AD3BBEF3D0198301C2C481B23 /* Release */ = {
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BECDBD0C1FED109F7838C0797E8AF61 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
@@ -2007,11 +1981,11 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
+
 		961C65AED58EDD47E6CECC0873A0189B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C620DF28BE89F5AD6F3E2F883B05B4A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */;
-=======
+
 		91DF0ABC30FA8843E5B494AD65B8C046 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A943D2F937BDDF0239E402EFE58838C /* Pods-TonikAnalytics.debug.xcconfig */;
@@ -2053,7 +2027,7 @@
 		9427C8024A8A7CB02296BFB7489D39A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C2E53AFDEAEF7E7BB73F63A500BD213 /* IQKeyboardManagerSwift.xcconfig */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2092,11 +2066,11 @@
 		};
 		9D0FD5F062A6B78A6F494D5D72128C3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
+
 			baseConfigurationReference = D4D39B7C63BAC58363BCA0F2BADF5A3B /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */;
-=======
+
 			baseConfigurationReference = 2C2E53AFDEAEF7E7BB73F63A500BD213 /* IQKeyboardManagerSwift.xcconfig */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2132,15 +2106,15 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
+
 		9E1D9974A71D54848365031E252EB792 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BECDBD0C1FED109F7838C0797E8AF61 /* IQKeyboardManagerSwift.xcconfig */;
-=======
+
 		B507D4B4419017445CB6551CEF1DF817 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D76F10756C33B1E0F4511880107288C4 /* Pods-TonikAnalyticsTests.debug.xcconfig */;
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2151,12 +2125,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-<<<<<<< HEAD
+
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
-=======
+
 				INFOPLIST_FILE = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests-Info.plist";
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2164,11 +2138,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-<<<<<<< HEAD
+
 				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
 				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
 				PRODUCT_NAME = IQKeyboardManagerSwift;
-=======
+
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TonikAnalyticsTests/Pods-TonikAnalyticsTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -2176,7 +2150,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -2361,7 +2335,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
+
 		EF9ADCCC47B5B73504917565AA87648F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A943D2F937BDDF0239E402EFE58838C /* Pods-TonikAnalytics.debug.xcconfig */;
@@ -2437,8 +2411,8 @@
 			};
 			name = Release;
 		};
-=======
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
+
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2451,36 +2425,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
+
 		6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00319A2330DC739FCBFBB6CFB0C5F58D /* Debug */,
 				F659822BFF3B3C20B29B76B89800A5E9 /* Release */,
-=======
+
 		760B5D8C7A82F6DCA492088B078934A1 /* Build configuration list for PBXNativeTarget "Charts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C898A3868A34803747DF0D466F4C75B0 /* Debug */,
 				CB43E6D4379EED0DC0FE7979239386C5 /* Release */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
+
 		A30F49BFF0DC668AA5BDECB9ED62362E /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics-TonikAnalyticsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D0FD5F062A6B78A6F494D5D72128C3E /* Debug */,
 				961C65AED58EDD47E6CECC0873A0189B /* Release */,
-=======
+
 		9C077BE25F4A373C6AA3E46320DD1874 /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics-TonikAnalyticsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EC2410B6F0C898E6537FC770AB94087 /* Debug */,
 				33D1D43AD3BBEF3D0198301C2C481B23 /* Release */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2503,19 +2477,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
+
 		E8EADDD26EA59E84CC75E4267ACAFE6B /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF9ADCCC47B5B73504917565AA87648F /* Debug */,
 				66341011A7F1334685372DBA80A7D9AA /* Release */,
-=======
+
 		ECC16EBAA5A2F3BA64B7A96BD792D5D0 /* Build configuration list for PBXNativeTarget "Pods-TonikAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91DF0ABC30FA8843E5B494AD65B8C046 /* Debug */,
 				B8267D3DE07671790D6934112FA29B7D /* Release */,
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework
-=======
+
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework

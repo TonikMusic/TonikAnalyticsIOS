@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-<<<<<<< HEAD
+
 ## Alamofire
 
 Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
@@ -23,7 +23,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-=======
+
 ## Charts
 
 Apache License
@@ -228,7 +228,7 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
->>>>>>> 403366742666e84c9f7ff838db0a8788b907f4bb
+
 
 
 ## IQKeyboardManagerSwift
