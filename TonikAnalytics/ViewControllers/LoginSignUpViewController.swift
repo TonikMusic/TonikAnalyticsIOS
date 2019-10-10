@@ -46,16 +46,7 @@ class LoginSignupViewController: UIViewController {
     
     
     @objc func didPressLoginSignupBtn() {
-        if self.loginSignUpBtn.currentTitle == "Sign Up" {
-            print("pressed")
-            let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
-            let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
-            self.navigationController?.pushViewController(onBoardingVC, animated: true)
-            
-        } else {
-            // NOTE: Process the user to login
-        }
+        handleLoginSignUp()
     }
 
     @objc func didPressAccountBtn() {
@@ -73,7 +64,7 @@ class LoginSignupViewController: UIViewController {
     private func showDatePicker() {
         datePickerView.datePickerMode = .date
         datePickerView.translatesAutoresizingMaskIntoConstraints = false
-//        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
 //
 //        let toolBar = UIToolbar().ToolbarPicker(mySelect: #selector(doneDatePickerPressed))
 //        self.loginSignupView.dateOfBirth.inputAccessoryView = toolBar
@@ -164,6 +155,75 @@ class LoginSignupViewController: UIViewController {
                 
             })
 
+        }
+    }
+    
+    
+    func handleLoginSignUp() {
+        guard
+            let userName = loginSignupView.userName.text,
+            let email = loginSignupView.email.text,
+            let password = loginSignupView.password.text,
+            let confirmPassword = loginSignupView.password.text,
+            let dob = loginSignupView.dateOfBirth.text
+            else { return }
+        
+        
+        
+        if self.loginSignUpBtn.currentTitle == "Sign Up" {
+            
+            if userName.count <= 0 && email.count <= 0 && password.count <= 0 {
+                let alertController = UIAlertController(title: "Error", message: "Please complete registration.", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            } else if email.count < 0 || password.count < 0 {
+                let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+            
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                
+                let user = User(fullName: "nit", userName: "lil nit", email: "tester@gmail.com", password: "nitTester24dabest", dob: "May 13, 1997", artist: true)
+                // NOTE: handling user sign up
+
+                LoginSignUpService.signUpRequest(newUser: user) { (data) in
+                    // NOTE: Save Token
+                    print(data)
+                    if (data != nil) {
+                        // NOTE: After creating creating a user successfully continue to onboarding
+                        let layout = UICollectionViewFlowLayout()
+                        layout.scrollDirection = .horizontal
+                        let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
+                        self.navigationController?.pushViewController(onBoardingVC, animated: true)
+                    }
+
+                }
+            }
+            
+        } else {
+            // NOTE: handling user login
+            
+            if email.count <= 0 || password.count <= 0 {
+                let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let returningUser = ReturningUser(email: email, password: password)
+                LoginSignUpService.loginRequest(user: returningUser) { (token) in
+                    print(token)
+                    let tabVC = TabBarController()
+                    self.navigationController?.pushViewController(tabVC, animated: true)
+                }
+            }
+            
         }
     }
 }

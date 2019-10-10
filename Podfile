@@ -8,6 +8,7 @@ target 'TonikAnalytics' do
   # Pods for TonikAnalytics
   pod 'IQKeyboardManagerSwift'
   pod 'Charts'
+  pod 'Alamofire', '~> 5.0.0-rc.2'
 
   target 'TonikAnalyticsTests' do
     inherit! :search_paths
