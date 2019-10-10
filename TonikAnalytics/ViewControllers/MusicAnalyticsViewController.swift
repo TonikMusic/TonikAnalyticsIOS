@@ -23,7 +23,7 @@ class MusicAnalyticsViewController: UIViewController {
         setupGraph()
         setupButtons()
         
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let months = ["nil", "nil", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
         
         graphView.setChart(months, unitsSold)
