@@ -12,6 +12,8 @@ import Charts
 
 class LineGraphView: LineChartView{
     
+    // TODO: Refactor code comment and make cleaner
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
