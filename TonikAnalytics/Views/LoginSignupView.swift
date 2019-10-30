@@ -35,8 +35,6 @@ class LoginSignUpView: UIView {
         super.init(frame: frame)
         setUpView()
         secureTextField()
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -172,7 +170,6 @@ class LoginSignUpView: UIView {
     
     private func secureTextField() {
         userName.isEnabled = false
-        confirmPassword.isEnabled = false
         password.isSecureTextEntry = true
         password.textContentType = .oneTimeCode
         confirmPassword.isSecureTextEntry = true

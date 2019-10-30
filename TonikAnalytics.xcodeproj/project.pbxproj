@@ -39,8 +39,11 @@
 		2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */; };
 		2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */; };
 		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
+		7410B6462368ECC600A2C62A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6452368ECC600A2C62A /* AlertService.swift */; };
+		7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */; };
+		74B75FCD23627B5000A0E607 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B75FCC23627B5000A0E607 /* Router.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
-		74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* LoginSignUpService.swift */; };
+		74D79EB6234F834900054D1E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* NetworkService.swift */; };
 		74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */; };
 		74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */; };
 		CB91F7FF61D92847F55CD621 /* Pods_TonikAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82BA580A16A3D56174B5512 /* Pods_TonikAnalytics.framework */; };
@@ -105,8 +108,11 @@
 		2BEB8386234BD898002E61E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7410B6452368ECC600A2C62A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		74B75FCC23627B5000A0E607 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		74D79EB5234F834900054D1E /* LoginSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpService.swift; sourceTree = "<group>"; };
+		74D79EB5234F834900054D1E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		74D79EB7234F9ADF00054D1E /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
 		A57243299CED1AA0F872E2A3 /* Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,12 +176,12 @@
 		2BEB831D234BBD12002E61E4 /* TonikAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				74D79EAA234F825000054D1E /* NetworkService */,
-				2BEB831E234BBD12002E61E4 /* AppDelegate.swift */,
-				2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */,
-				2BEB836C234BCB20002E61E4 /* Extensions */,
+				74B75FC7236236E400A0E607 /* Model */,
+				74D79EAA234F825000054D1E /* Services */,
 				2BEB835B234BC8EE002E61E4 /* Views */,
 				2BEB834E234BC22A002E61E4 /* ViewControllers */,
+				74B75FC6236236A400A0E607 /* Delegates */,
+				2BEB836C234BCB20002E61E4 /* Extensions */,
 				2BEB8327234BBD13002E61E4 /* Assets.xcassets */,
 				2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */,
 				2BEB832C234BBD13002E61E4 /* Info.plist */,
@@ -245,6 +251,7 @@
 				2BEB837B234BCE79002E61E4 /* UIViewExt.swift */,
 				2BEB837D234BCE9D002E61E4 /* View.swift */,
 				2BEB837F234BCEC6002E61E4 /* LoginSignUpControllerExt.swift */,
+				7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,13 +269,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		74D79EAA234F825000054D1E /* NetworkService */ = {
+		74B75FC6236236A400A0E607 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */,
+				2BEB831E234BBD12002E61E4 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		74B75FC7236236E400A0E607 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				74D79EB3234F831D00054D1E /* User.swift */,
-				74D79EB5234F834900054D1E /* LoginSignUpService.swift */,
 			);
-			path = NetworkService;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74D79EAA234F825000054D1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74D79EB5234F834900054D1E /* NetworkService.swift */,
+				74B75FCC23627B5000A0E607 /* Router.swift */,
+				7410B6452368ECC600A2C62A /* AlertService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9D9B2064DABE55FEE6970CDA /* Frameworks */ = {
@@ -529,10 +554,12 @@
 				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
 				74D79EB4234F831D00054D1E /* User.swift in Sources */,
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
+				7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */,
+				74B75FCD23627B5000A0E607 /* Router.swift in Sources */,
 				2BEB835A234BC426002E61E4 /* SettingsViewController.swift in Sources */,
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
 				74D79EB8234F9AE000054D1E /* SettingsCollectionViewCell.swift in Sources */,
-				74D79EB6234F834900054D1E /* LoginSignUpService.swift in Sources */,
+				74D79EB6234F834900054D1E /* NetworkService.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
 				2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */,
@@ -540,6 +567,7 @@
 				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
+				7410B6462368ECC600A2C62A /* AlertService.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
 				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
