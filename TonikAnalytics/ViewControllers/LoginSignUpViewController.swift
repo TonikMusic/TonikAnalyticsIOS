@@ -34,7 +34,6 @@ class LoginSignupViewController: UIViewController {
         loginSignUpBtn.addTarget(self, action: #selector(didPressLoginSignupBtn), for: .touchUpInside)
         layout()
         showDatePicker()
-       
     }
     
     
@@ -45,8 +44,22 @@ class LoginSignupViewController: UIViewController {
     }
     
     
+    private func showAlert(with message: String) {
+        let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: message, alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // NOTE: This funciton sets up the date picker along with a tool bar
+    private func showDatePicker() {
+        datePickerView.datePickerMode = .date
+        datePickerView.translatesAutoresizingMaskIntoConstraints = false
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        self.loginSignupView.dateOfBirth.inputView = datePickerView
+    }
+    
+    // MARK: - Objective Methods
     @objc func didPressLoginSignupBtn() {
-        handleLoginSignUp()
+        handleAuth()
     }
 
     @objc func didPressAccountBtn() {
@@ -60,25 +73,34 @@ class LoginSignupViewController: UIViewController {
         
     }
     
-    // NOTE: This funciton sets up the date picker along with a tool bar
-    private func showDatePicker() {
-        datePickerView.datePickerMode = .date
-        datePickerView.translatesAutoresizingMaskIntoConstraints = false
-        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
-//
-//        let toolBar = UIToolbar().ToolbarPicker(mySelect: #selector(doneDatePickerPressed))
-//        self.loginSignupView.dateOfBirth.inputAccessoryView = toolBar
-        self.loginSignupView.dateOfBirth.inputView = datePickerView
+    //NOTE: handles email validity
+    @objc func isValidEmail(_ sender: AnyObject?) {
+        guard let email = sender?.text else { return }
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        let result = emailTest.evaluate(with: email)
+        
+        if result != true {
+            self.loginSignUpBtn.isEnabled = false
+        } else {
+            self.loginSignUpBtn.isEnabled = false
+        }
     }
     
-    //NOTE: Updates super view visibility when keyboard is called
-    private func updateViewToUseKeyBorad() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardDidHideNotification, object: nil)
-        hideKeyboardTapped()
+    @objc func validatePassword(_ sender: AnyObject?) {
+           
+        guard let password = sender?.text else { return }
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{10,}$")
+        let result = passwordTest.evaluate(with: password)
+
+        if result != true {
+        self.loginSignUpBtn.isEnabled = false
+        } else {
+        self.loginSignUpBtn.isEnabled = true
+        }
     }
     
-    
+    // MARK: - Animations
     
     // NOTE: This function animates the given views
     private func addAnimationToViews() {
@@ -158,72 +180,95 @@ class LoginSignupViewController: UIViewController {
         }
     }
     
-    
-    func handleLoginSignUp() {
+    // MARK: - Authentication Methods
+    fileprivate func handleAuth() {
         guard
             let userName = loginSignupView.userName.text,
             let email = loginSignupView.email.text,
             let password = loginSignupView.password.text,
-            let confirmPassword = loginSignupView.password.text,
-            let dob = loginSignupView.dateOfBirth.text
+            let confirmPassword = loginSignupView.confirmPassword.text
             else { return }
         
         
+        switch loginSignUpBtn.currentTitle {
+        case "Sign Up":
+            let isValid = validateSignUpFields(userName, email, password, confirmPassword)
+            if isValid == true {
+                let user = User(userName: "qqwghjesd32r", email: "qwerqghjwe45@gmail.com", password: "Toomuch405")
+                let newUser = User(userName: userName, email: email, password: password)
+                signUp(newUser)
+            }
+        case "Log In":
+            break
+        default:
+            break
+        }
+    }
+    
+    //NOTE: function validates sign up required fields
+    fileprivate func validateSignUpFields(_ userName: String, _ email: String, _ password: String, _ confirmPassword: String) -> Bool {
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{10,}$")
         
-        if self.loginSignUpBtn.currentTitle == "Sign Up" {
-            
-            if userName.count <= 0 && email.count <= 0 && password.count <= 0 {
-                let alertController = UIAlertController(title: "Error", message: "Please complete registration.", preferredStyle: .alert)
-                
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alertController.addAction(defaultAction)
-                
-                self.present(alertController, animated: true, completion: nil)
-            } else if email.count < 0 || password.count < 0 {
-                let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
-            
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alertController.addAction(defaultAction)
-            
-                self.present(alertController, animated: true, completion: nil)
-            } else {
-                
-                let user = User(fullName: "nit", userName: "lil nit", email: "tester@gmail.com", password: "nitTester24dabest", dob: "May 13, 1997", artist: true)
-                // NOTE: handling user sign up
-
-                LoginSignUpService.signUpRequest(newUser: user) { (data) in
-                    // NOTE: Save Token
-                    print(data)
-                    if (data != nil) {
-                        // NOTE: After creating creating a user successfully continue to onboarding
-                        let layout = UICollectionViewFlowLayout()
-                        layout.scrollDirection = .horizontal
-                        let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
-                        self.navigationController?.pushViewController(onBoardingVC, animated: true)
-                    }
-
+        if userName.count == 0 && email.count == 0 && password.count == 0 && confirmPassword.count == 0 {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please complete registration.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        } else if userName.count == 0 || email.count == 0 || password.count == 0 || confirmPassword.count == 0 {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please complete registration.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        } else if emailTest.evaluate(with: email) != true {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please enter a valid email.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        } else if passwordTest.evaluate(with: password) != true {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Password must be atleast 10 characters long.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        } else if password != confirmPassword {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please reconfirm your password.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
+        return true
+    }
+    
+    //NOTE: validates log in required fields
+    fileprivate func validateLoginFields(_ email: String, _ password: String) -> Bool {
+        if email.count == 0 || password.count == 0 {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please complete registration.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        } else if email.count == 0 && password.count == 0 {
+            let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please enter email and password.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
+        return true
+    }
+    
+    fileprivate func signUp(_ newUser: User) {
+        self.showSpinner()
+        // NOTE: handling user sign up
+        NetworkService.signUpRequest(newUser: newUser) { (result) in
+            switch result {
+            case .success(let value):
+                if value["message"] != nil {
+                    self.removeSpinner()
+                    self.showAlert(with: "\(value["message"]!). Please try again.")
+                } else {
+                    //TODO: save token in useDefaults
+                    self.removeSpinner()
+//                    let layout = UICollectionViewFlowLayout()
+//                    layout.scrollDirection = .horizontal
+//                    let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
+//                    self.navigationController?.pushViewController(onBoardingVC, animated: true)
                 }
+            case .failure(let error):
+                self.removeSpinner()
+                print(error)
             }
-            
-        } else {
-            // NOTE: handling user login
-            
-            if email.count <= 0 || password.count <= 0 {
-                let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
-                
-                let defaultAction = UIAlertAction(title: "ok", style: .cancel, handler: nil)
-                alertController.addAction(defaultAction)
-                
-                self.present(alertController, animated: true, completion: nil)
-            } else {
-                let returningUser = ReturningUser(email: email, password: password)
-                LoginSignUpService.loginRequest(user: returningUser) { (token) in
-                    print(token)
-                    let tabVC = TabBarController()
-                    self.navigationController?.pushViewController(tabVC, animated: true)
-                }
-            }
-            
         }
     }
 }
