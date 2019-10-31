@@ -15,7 +15,7 @@ struct SettingsContent {
 
 class SettingsViewController: UICollectionViewController {
     enum Sections: String {
-        case subscription = ""
+        case subscription
         case helpandsupport = "Help & Support"
         case account = "Account"
         case notification = "Notification"

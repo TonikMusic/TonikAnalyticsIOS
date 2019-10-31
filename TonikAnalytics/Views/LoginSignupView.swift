@@ -170,9 +170,15 @@ class LoginSignUpView: UIView {
     
     private func secureTextField() {
         userName.isEnabled = false
+        userName.autocorrectionType = .no
+        userName.autocapitalizationType = .none
+        email.autocorrectionType = .no
+        email.autocapitalizationType = .none
         password.isSecureTextEntry = true
+        password.autocapitalizationType = .none
         password.textContentType = .oneTimeCode
         confirmPassword.isSecureTextEntry = true
+        confirmPassword.autocapitalizationType = .none
         confirmPassword.textContentType = .oneTimeCode
         
     }
