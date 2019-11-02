@@ -8,7 +8,7 @@ import UIKit
 
 class View: UIView {
     
-    public static func dropView(backgroundColor: UIColor) -> UIView {
+    public static func initView(backgroundColor: UIColor) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = backgroundColor

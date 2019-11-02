@@ -30,8 +30,7 @@ class TabBarController: UITabBarController {
         
         
         // NOTE: settings view controller
-        let layout = UICollectionViewFlowLayout()
-        let settings = SettingsViewController(collectionViewLayout: layout)
+        let settings = SettingsTableViewController()
         var settingsIcon = UIImage(named: "settings")
         // NOTE: sets the icon to a scaled image with the original colors
         settingsIcon = settingsIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
