@@ -18,13 +18,6 @@ class TabBarController: UITabBarController {
         musicStats.tabBarItem = UITabBarItem(title: "Music", image: homeIcon, tag: 0)
         musicStats.navigationItem.title = "Music Analytics"
         
-        // NOTE: profile view controller
-        let socialSats = SocialAnalyticsViewController()
-        var profileIcon = UIImage(named: "profile")
-        profileIcon = profileIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        socialSats.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
-        socialSats.tabBarItem = UITabBarItem(title: "Social", image: profileIcon, tag: 1)
-        socialSats.navigationItem.title = "Social Analytics"
         
         // NOTE: settings view controller
         let settings = SettingsTableViewController()
@@ -35,7 +28,7 @@ class TabBarController: UITabBarController {
         settings.tabBarItem = UITabBarItem(title: "Settings", image:settingsIcon, tag: 2)
         settings.title = "Settings"
         // NOTE: set up of the TabBarController and adding the viewControllers
-        let controllers = [musicStats, socialSats, settings]
+        let controllers = [musicStats, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
         
