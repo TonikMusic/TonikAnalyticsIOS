@@ -19,10 +19,6 @@ class SettingsTableViewController: UITableViewController {
         setupTableViewComponents()
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-//        tableView.tableFooterView = View.initView(backgroundColor: #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1))
-    }
     
     private func setupTableViewComponents() {
         
