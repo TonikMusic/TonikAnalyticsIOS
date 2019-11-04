@@ -11,19 +11,19 @@ class TabBarController: UITabBarController {
         tabBar.barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         
         // NOTE: homeview controller
-        let musicStats = MusicAnalyticsViewController()
-        var homeIcon = UIImage(named: "home")
+        let musicStats = TrackedArtistsViewController()
+        var homeIcon = UIImage(named: "homeIcon")
         musicStats.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
-        homeIcon = homeIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        musicStats.tabBarItem = UITabBarItem(title: "Music", image: homeIcon, tag: 0)
-        musicStats.navigationItem.title = "Music Analytics"
+        homeIcon = homeIcon?.withRenderingMode(.alwaysOriginal)
+        musicStats.tabBarItem = UITabBarItem(title: "Artists", image: homeIcon, tag: 0)
+        musicStats.navigationItem.title = "Tracked artists"
         
         
         // NOTE: settings view controller
         let settings = SettingsTableViewController()
         var settingsIcon = UIImage(named: "settings")
         // NOTE: sets the icon to a scaled image with the original colors
-        settingsIcon = settingsIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
+        settingsIcon = settingsIcon?.withRenderingMode(.alwaysOriginal)
         settings.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
         settings.tabBarItem = UITabBarItem(title: "Settings", image:settingsIcon, tag: 2)
         settings.title = "Settings"
@@ -36,7 +36,7 @@ class TabBarController: UITabBarController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.selectedViewController = viewControllers?[1]
+        self.selectedViewController = viewControllers?[0]
     }
 }
     

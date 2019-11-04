@@ -159,6 +159,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BE27F5E237099710003D115 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
+				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
+				74D79EB7234F9ADF00054D1E /* SettingsTableViewCell.swift */,
+				2BE27F5C237098F90003D115 /* TrackedArtistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2BEB8312234BBD12002E61E4 = {
 			isa = PBXGroup;
 			children = (
@@ -232,17 +243,14 @@
 		2BEB835B234BC8EE002E61E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2BE27F5E237099710003D115 /* Cells */,
 				2BEB8360234BC9BB002E61E4 /* LoginSignupView.swift */,
 				2BEB8362234BCA3D002E61E4 /* LogoView.swift */,
-				2BEB836A234BCAF1002E61E4 /* OnBoardingPageCell.swift */,
-				2BEB835E234BC992002E61E4 /* FeaturedCVCell.swift */,
-				74D79EB7234F9ADF00054D1E /* SettingsTableViewCell.swift */,
 				74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */,
 				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
 				7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */,
-				2BE27F5C237098F90003D115 /* TrackedArtistCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
