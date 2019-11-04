@@ -11,6 +11,8 @@
 		2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */; };
 		2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */; };
 		2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE2234F171000B09E6B /* BarGraphView.swift */; };
+		2BE27F5B236FF5140003D115 /* TrackedArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE27F5A236FF5140003D115 /* TrackedArtistsViewController.swift */; };
+		2BE27F5D237098F90003D115 /* TrackedArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE27F5C237098F90003D115 /* TrackedArtistCell.swift */; };
 		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
 		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
 		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 		2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphButton.swift; sourceTree = "<group>"; };
 		2BA5ABE2234F171000B09E6B /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		2BE27F5A236FF5140003D115 /* TrackedArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistsViewController.swift; sourceTree = "<group>"; };
+		2BE27F5C237098F90003D115 /* TrackedArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistCell.swift; sourceTree = "<group>"; };
 		2BEB831B234BBD12002E61E4 /* TonikAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonikAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */,
+				2BE27F5A236FF5140003D115 /* TrackedArtistsViewController.swift */,
 				2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */,
 				2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */,
 				2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */,
@@ -237,6 +242,7 @@
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
 				7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */,
+				2BE27F5C237098F90003D115 /* TrackedArtistCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7410B64C236E8A9500A2C62A /* UserInfoHeaderView.swift in Sources */,
+				2BE27F5D237098F90003D115 /* TrackedArtistCell.swift in Sources */,
 				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
@@ -577,6 +584,7 @@
 				7410B6462368ECC600A2C62A /* AlertService.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
 				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
+				2BE27F5B236FF5140003D115 /* TrackedArtistsViewController.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
 				2BEB836B234BCAF1002E61E4 /* OnBoardingPageCell.swift in Sources */,
 				7410B64A236D445600A2C62A /* SettingsSection.swift in Sources */,
