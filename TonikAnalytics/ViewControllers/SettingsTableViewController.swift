@@ -77,15 +77,23 @@ extension SettingsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath {
         case [0, 2]:
-            print("hello")
+            let updateEmailVC = UpdateEmailViewController()
+            self.navigationController?.pushViewController(updateEmailVC, animated: true)
         case [0, 3]:
-            print("do something")
+            let changePasswordVC = ChangePasswordViewController()
+            self.navigationController?.pushViewController(changePasswordVC, animated: true)
+        case [0, 4]:
+            let manageSubcriptionsVC = ManageSubcriptionViewController()
+            self.navigationController?.pushViewController(manageSubcriptionsVC, animated: true)
         case [1, 0]:
-            print("privacy policy")
+            let privacyPolicyVC = PrivacyPolicyViewController()
+            self.navigationController?.pushViewController(privacyPolicyVC, animated: true)
         case [1, 1]:
-            print("terms")
+            let termsVC = TermsViewController()
+            self.navigationController?.pushViewController(termsVC, animated: true)
         case [1, 2]:
-            print("help & support")
+            let helpAndSupportVC = HelpAndSupportViewController()
+            self.navigationController?.pushViewController(helpAndSupportVC, animated: true)
         default:
             break
         }
