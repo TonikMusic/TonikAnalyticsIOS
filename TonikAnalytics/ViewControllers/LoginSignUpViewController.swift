@@ -49,7 +49,7 @@ class LoginSignupViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    // NOTE: This funciton sets up the date picker along with a tool bar
+    /// NOTE: This funciton sets up the date picker along with a tool bar
     private func showDatePicker() {
         datePickerView.datePickerMode = .date
         datePickerView.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +73,7 @@ class LoginSignupViewController: UIViewController {
         
     }
     
-    //NOTE: handles email validity
+    ///NOTE: handles email validity
     @objc func isValidEmail(_ sender: AnyObject?) {
         guard let email = sender?.text else { return }
         
@@ -102,7 +102,7 @@ class LoginSignupViewController: UIViewController {
     
     // MARK: - Animations
     
-    // NOTE: This function animates the given views
+    /// NOTE: This function animates the given views
     private func addAnimationToViews() {
         
         if  createAccountBtn.currentTitle == "Sign Up" {
@@ -116,8 +116,8 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.addTopPaddingPassword.constant = 20
             self.loginSignupView.addTopPaddingToConfirmPassword.constant = 20
             self.loginSignupView.addTopPaddingToView.constant = 20
-            
-            
+            self.loginSignupView.email.text = ""
+            self.loginSignupView.password.text = ""
 
             UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveEaseInOut, animations: {
 
@@ -153,6 +153,10 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.addTopPaddingPassword.constant = 40
             self.loginSignupView.addTopPaddingToConfirmPassword.constant = -40
             self.loginSignupView.addTopPaddingToView.constant = -40
+            self.loginSignupView.email.text = ""
+            self.loginSignupView.password.text = ""
+            self.loginSignupView.userName.text = ""
+            self.loginSignupView.confirmPassword.text = ""
             
             UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveEaseInOut, animations: {
                 
@@ -181,6 +185,8 @@ class LoginSignupViewController: UIViewController {
     }
     
     // MARK: - Authentication Methods
+    
+    /// NOTE: This method handles authentication: Log In & Sign Up
     fileprivate func handleAuth() {
         guard
             let userName = loginSignupView.userName.text,
@@ -194,18 +200,21 @@ class LoginSignupViewController: UIViewController {
         case "Sign Up":
             let isValid = validateSignUpFields(userName, email, password, confirmPassword)
             if isValid == true {
-                let user = User(userName: "qqwghjesd32r", email: "qwerqghjwe45@gmail.com", password: "Toomuch405")
                 let newUser = User(userName: userName, email: email, password: password)
                 signUp(newUser)
             }
         case "Log In":
-            break
+            let isValid = validateLoginFields(email, password)
+            if isValid == true {
+                let user = User(email: email, password: password)
+                logIn(user)
+            }
         default:
             break
         }
     }
     
-    //NOTE: function validates sign up required fields
+    /// NOTE: function validates sign up required fields
     fileprivate func validateSignUpFields(_ userName: String, _ email: String, _ password: String, _ confirmPassword: String) -> Bool {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{10,}$")
@@ -234,7 +243,7 @@ class LoginSignupViewController: UIViewController {
         return true
     }
     
-    //NOTE: validates log in required fields
+    /// NOTE: validates log in required fields
     fileprivate func validateLoginFields(_ email: String, _ password: String) -> Bool {
         if email.count == 0 || password.count == 0 {
             let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: "Please complete registration.", alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
@@ -248,26 +257,53 @@ class LoginSignupViewController: UIViewController {
         return true
     }
     
+    fileprivate func logIn(_ user: User) {
+        self.showSpinner()
+        
+        /// NOTE: handling user log in
+        NetworkService.loginRequest(user: user) { (result) in
+            switch result {
+            case .success(let value):
+                if (value["message"] != nil) {
+                    self.removeSpinner()
+                    self.showAlert(with: "\(value["message"]!). Please try again.")
+                } else {
+                    self.removeSpinner()
+                    //TODO: save current user token
+                    
+                    let tabVC = TabBarController()
+                    tabVC.modalPresentationStyle = .fullScreen
+                    self.navigationController?.pushViewController(tabVC, animated: true)
+                }
+            case .failure(let error):
+                self.removeSpinner()
+                print(error)
+                self.showAlert(with: "\(error)")
+            }
+        }
+    }
+    
     fileprivate func signUp(_ newUser: User) {
         self.showSpinner()
-        // NOTE: handling user sign up
+        /// NOTE: handling user sign up
         NetworkService.signUpRequest(newUser: newUser) { (result) in
             switch result {
             case .success(let value):
-                if value["message"] != nil {
+                if (value["message"] != nil) {
                     self.removeSpinner()
                     self.showAlert(with: "\(value["message"]!). Please try again.")
                 } else {
                     //TODO: save token in useDefaults
                     self.removeSpinner()
-//                    let layout = UICollectionViewFlowLayout()
-//                    layout.scrollDirection = .horizontal
-//                    let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
-//                    self.navigationController?.pushViewController(onBoardingVC, animated: true)
+                    let layout = UICollectionViewFlowLayout()
+                    layout.scrollDirection = .horizontal
+                    let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)
+                    self.navigationController?.pushViewController(onBoardingVC, animated: true)
                 }
             case .failure(let error):
                 self.removeSpinner()
                 print(error)
+                self.showAlert(with: "\(error)")
             }
         }
     }

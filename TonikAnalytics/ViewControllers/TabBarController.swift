@@ -7,35 +7,31 @@ import UIKit
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.isTranslucent = false
+        tabBar.barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         
         // NOTE: homeview controller
         let musicStats = MusicAnalyticsViewController()
         var homeIcon = UIImage(named: "home")
-        musicStats.view.backgroundColor = .white
+        musicStats.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
         homeIcon = homeIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
         musicStats.tabBarItem = UITabBarItem(title: "Music", image: homeIcon, tag: 0)
         musicStats.navigationItem.title = "Music Analytics"
-        
-        
-        
-        
         
         // NOTE: profile view controller
         let socialSats = SocialAnalyticsViewController()
         var profileIcon = UIImage(named: "profile")
         profileIcon = profileIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        socialSats.view.backgroundColor = .white
+        socialSats.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
         socialSats.tabBarItem = UITabBarItem(title: "Social", image: profileIcon, tag: 1)
         socialSats.navigationItem.title = "Social Analytics"
         
-        
         // NOTE: settings view controller
-        let layout = UICollectionViewFlowLayout()
-        let settings = SettingsViewController(collectionViewLayout: layout)
+        let settings = SettingsTableViewController()
         var settingsIcon = UIImage(named: "settings")
         // NOTE: sets the icon to a scaled image with the original colors
         settingsIcon = settingsIcon?.scaled(with: CGFloat(0.25))!.withRenderingMode(.alwaysOriginal)
-        settings.view.backgroundColor = .white
+        settings.view.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
         settings.tabBarItem = UITabBarItem(title: "Settings", image:settingsIcon, tag: 2)
         settings.title = "Settings"
         // NOTE: set up of the TabBarController and adding the viewControllers

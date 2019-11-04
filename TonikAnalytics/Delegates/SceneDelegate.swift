@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBarController = TabBarController()
         tabBarController.selectedIndex = 0
         /****** delete after ********/
-        userDefault.set(false, forKey: "isUserLoggedIn")
+        userDefault.set(true, forKey: "isUserLoggedIn")
         userDefault.synchronize()
         
         if userDefault.bool(forKey: "isUserLoggedIn") {
@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // NOTE: Setting the root
         window?.makeKeyAndVisible()
         // NOTE: Setting UINavBAr appearance
-        UINavigationBar.appearance().barTintColor = .black
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false

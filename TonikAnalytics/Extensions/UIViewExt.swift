@@ -66,14 +66,3 @@ extension UIView {
     
 }
 
-
-extension UIView {
-    
-    func createView() -> UIView {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
-    }
-    
-}
