@@ -42,6 +42,7 @@
 		7410B6462368ECC600A2C62A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6452368ECC600A2C62A /* AlertService.swift */; };
 		7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */; };
 		7410B64A236D445600A2C62A /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B649236D445600A2C62A /* SettingsSection.swift */; };
+		7410B64C236E8A9500A2C62A /* UserInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */; };
 		74B75FCD23627B5000A0E607 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B75FCC23627B5000A0E607 /* Router.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
 		74D79EB6234F834900054D1E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* NetworkService.swift */; };
@@ -112,6 +113,7 @@
 		7410B6452368ECC600A2C62A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		7410B649236D445600A2C62A /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderView.swift; sourceTree = "<group>"; };
 		74B75FCC23627B5000A0E607 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D79EB5234F834900054D1E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
+				7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7410B64C236E8A9500A2C62A /* UserInfoHeaderView.swift in Sources */,
 				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,

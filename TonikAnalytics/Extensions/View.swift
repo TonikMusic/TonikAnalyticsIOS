@@ -8,8 +8,8 @@ import UIKit
 
 class View: UIView {
     
-    public static func initView(backgroundColor: UIColor) -> UIView {
-        let view = UIView()
+    public static func initView(backgroundColor: UIColor) -> View {
+        let view = View()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = backgroundColor
         

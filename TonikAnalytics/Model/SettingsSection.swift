@@ -25,6 +25,7 @@ enum SettingsSection: Int, CaseIterable, CustomStringConvertible {
 
 
 enum AccountOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
+    case darkMode
     case notification
     case updateEmail
     case changePassword
@@ -32,6 +33,7 @@ enum AccountOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
 
     var containsArrow: Bool {
         switch self {
+        case .darkMode: return false
         case .notification: return false
         case .updateEmail: return true
         case .changePassword: return true
@@ -41,6 +43,7 @@ enum AccountOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
     
     var containsSwitch: Bool {
         switch self {
+        case .darkMode: return true
         case .notification: return true
         case .updateEmail: return false
         case .changePassword: return false
@@ -50,15 +53,17 @@ enum AccountOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
     
     var description: String {
         switch self {
+        case .darkMode: return "Dark Mode"
         case .notification: return "Notification"
         case .updateEmail: return "Update Email"
         case .changePassword: return "Change Password"
-        case .manageSubscription: return "Manage subscription"
+        case .manageSubscription: return "Manage Subscription"
         }
     }
 }
 
 enum AccountOptionsIcon: Int, CaseIterable, CustomStringConvertible {
+    case darkMode
     case notification
     case updateEmail
     case changePassword
@@ -66,6 +71,7 @@ enum AccountOptionsIcon: Int, CaseIterable, CustomStringConvertible {
     
     var description: String {
         switch self {
+        case .darkMode: return "darkMode"
         case .notification: return "notification"
         case .updateEmail: return "email"
         case .changePassword: return "password"

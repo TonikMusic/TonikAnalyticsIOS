@@ -12,7 +12,6 @@ class CustomImage: UIImageView {
         imageView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         return imageView
     }
 }

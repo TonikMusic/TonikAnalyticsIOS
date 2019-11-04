@@ -9,14 +9,16 @@
 import Foundation
 import UIKit
 
-class SettingsHeaderView: UITableViewHeaderFooterView {
+class SettingsHeaderView: UIView {
     static let headerId: String = String(describing: self)
     lazy var header: Label = self.createHeader()
     
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
         layout()
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

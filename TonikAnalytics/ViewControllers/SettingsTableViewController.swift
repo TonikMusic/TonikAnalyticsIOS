@@ -5,29 +5,12 @@
 import UIKit
 import Foundation
 
-struct SettingsContent {
-    let imageName: String!
-    let title: String!
-}
 
 class SettingsTableViewController: UITableViewController {
-    enum Sections: String {
-        case account = "ACCOUNT"
-        case other = "OTHER"
-        static var all: [Sections] {
-            return [.account, .other]
-        }
-    }
     
-    let settingsContent: [SettingsContent] = [
-    SettingsContent(imageName: "notification", title: "Notification"),
-    SettingsContent(imageName: "email", title: "Update Email"),
-    SettingsContent(imageName: "lock", title: "Change Password"),
-    SettingsContent(imageName: "subscription", title: "Manage Subscription"),
-    SettingsContent(imageName: "privacy", title: "Privacy Policy"),
-    SettingsContent(imageName: "term", title: "Terms"),
-    SettingsContent(imageName: "feedback", title: "Help & Feedback")
-    ]
+    
+    // MARK: - Properties
+    var userInfoHeaderView: UserInfoHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +19,22 @@ class SettingsTableViewController: UITableViewController {
         setupTableViewComponents()
     }
 
-    private func setupTableViewComponents() {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         tableView.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
+//        tableView.tableFooterView = View.initView(backgroundColor: #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1))
+    }
+    
+    private func setupTableViewComponents() {
+        
         tableView.alwaysBounceVertical = false
         tableView.showsHorizontalScrollIndicator = false
         tableView.register(SettingsTableViewCell.self, forCellReuseIdentifier: SettingsTableViewCell.cellId)
-        tableView.register(SettingsHeaderView.self, forHeaderFooterViewReuseIdentifier: SettingsHeaderView.headerId)
         tableView.rowHeight = 50
-//        tableView.tableHeaderView =
-        /// TODO: - fix back ground color
+        
+        let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 150)
+        userInfoHeaderView = UserInfoHeaderView(frame: frame)
+        tableView.tableHeaderView = userInfoHeaderView
         tableView.tableFooterView = View.initView(backgroundColor: #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1))
     }
     
@@ -70,6 +60,10 @@ extension SettingsTableViewController {
         return SettingsSection.allCases.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let section = SettingsSection(rawValue: section) else { return 0 }
         
@@ -80,13 +74,31 @@ extension SettingsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SettingsHeaderView.headerId) as! SettingsHeaderView
-        headerView.textLabel?.text = SettingsSection(rawValue: section)?.description
+        let headerView = SettingsHeaderView()
+        headerView.header.text = SettingsSection(rawValue: section)?.description
         return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath {
+        case [0, 2]:
+            print("hello")
+        case [0, 3]:
+            print("do something")
+        case [1, 0]:
+            print("privacy policy")
+        case [1, 1]:
+            print("terms")
+        case [1, 2]:
+            print("help & support")
+        default:
+            break
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.cellId, for: indexPath) as! SettingsTableViewCell
+        cell.selectionStyle = .none
         guard let section = SettingsSection(rawValue: indexPath.section) else { return cell }
         
         switch section {
