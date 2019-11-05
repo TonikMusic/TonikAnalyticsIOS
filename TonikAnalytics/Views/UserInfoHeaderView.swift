@@ -35,7 +35,6 @@ class UserInfoHeaderView: UIView {
 extension UserInfoHeaderView {
     func createBaseCircleView() -> View {
         let view = View.initView(backgroundColor: #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1))
-        
         return view
     }
     

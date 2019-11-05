@@ -7,6 +7,9 @@ import UIKit
 class TabBarController: UITabBarController {
     var addArtistButton: UIButton!
     
+    // MARK: - Properties
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.isTranslucent = false

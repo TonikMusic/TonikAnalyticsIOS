@@ -8,7 +8,8 @@ import UIKit
 
 class LoginSignupViewController: UIViewController {
     
-    //NOTE: Instantiating variables
+    // MARK: - Properties
+    weak var coordinator: MainCoordinator?
     lazy var viewHeight = self.view.frame.height
     lazy var viewWidth = self.view.frame.width
     lazy var viewCenterY = self.view.frame.midY

@@ -7,13 +7,13 @@ import IQKeyboardManagerSwift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: MainCoordinator?
     let userDefault = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        let loginSignupVC = LoginSignupViewController()
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
         
@@ -22,23 +22,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
+        let nav = UINavigationController()
+        configNavigation(navigationBar: nav.navigationBar)
+        coordinator = MainCoordinator(navigationController: nav)
+        
         let tabBarController = TabBarController()
         tabBarController.selectedIndex = 0
         /****** delete after ********/
-        userDefault.set(true, forKey: "isUserLoggedIn")
+        userDefault.set(false, forKey: "isUserLoggedIn")
         userDefault.synchronize()
         
         if userDefault.bool(forKey: "isUserLoggedIn") {
             window?.rootViewController = tabBarController
         } else {
-            let nav = UINavigationController(rootViewController: loginSignupVC)
-            nav.navigationBar.isHidden = true
+            coordinator?.startWithLoginSignUp()
             window?.rootViewController = nav
         }
         
         // NOTE: Setting the root
         window?.makeKeyAndVisible()
-        // NOTE: Setting UINavBAr appearance
+    }
+    
+    // NOTE: Setting UINavBar appearance
+    func configNavigation(navigationBar: UINavigationBar) {
         UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

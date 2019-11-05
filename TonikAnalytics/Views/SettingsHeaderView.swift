@@ -15,7 +15,7 @@ class SettingsHeaderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1)
+        self.backgroundColor = .clear
         layout()
     }
     
