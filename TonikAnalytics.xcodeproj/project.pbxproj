@@ -17,7 +17,6 @@
 		2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB831E234BBD12002E61E4 /* AppDelegate.swift */; };
 		2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */; };
 		2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8327234BBD13002E61E4 /* Assets.xcassets */; };
-		2BEB832B234BBD13002E61E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */; };
 		2BEB8336234BBD13002E61E4 /* TonikAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8335234BBD13002E61E4 /* TonikAnalyticsTests.swift */; };
 		2BEB8341234BBD13002E61E4 /* TonikAnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8340234BBD13002E61E4 /* TonikAnalyticsUITests.swift */; };
 		2BEB8350234BC23D002E61E4 /* SocialAnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */; };
@@ -42,6 +41,7 @@
 		2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */; };
 		2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */; };
 		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
+		2BF90C44237124B00090AA6A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF90C43237124B00090AA6A /* Launch Screen.storyboard */; };
 		7410B6462368ECC600A2C62A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6452368ECC600A2C62A /* AlertService.swift */; };
 		7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */; };
 		7410B64A236D445600A2C62A /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B649236D445600A2C62A /* SettingsSection.swift */; };
@@ -92,7 +92,6 @@
 		2BEB831E234BBD12002E61E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEB8320234BBD12002E61E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2BEB8327234BBD13002E61E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BEB832A234BBD13002E61E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BEB832C234BBD13002E61E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BEB8331234BBD13002E61E4 /* TonikAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TonikAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB8335234BBD13002E61E4 /* TonikAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonikAnalyticsTests.swift; sourceTree = "<group>"; };
@@ -122,6 +121,7 @@
 		2BEB8381234BCF0D002E61E4 /* KeyBoardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardExt.swift; sourceTree = "<group>"; };
 		2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextBoxExt.swift; sourceTree = "<group>"; };
 		2BEB8386234BD898002E61E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2BF90C43237124B00090AA6A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7410B6452368ECC600A2C62A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 				74B75FC6236236A400A0E607 /* Delegates */,
 				2BEB836C234BCB20002E61E4 /* Extensions */,
 				2BEB8327234BBD13002E61E4 /* Assets.xcassets */,
-				2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */,
 				2BEB832C234BBD13002E61E4 /* Info.plist */,
+				2BF90C43237124B00090AA6A /* Launch Screen.storyboard */,
 			);
 			path = TonikAnalytics;
 			sourceTree = "<group>";
@@ -470,7 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEB832B234BBD13002E61E4 /* LaunchScreen.storyboard in Resources */,
+				2BF90C44237124B00090AA6A /* Launch Screen.storyboard in Resources */,
 				2BEB8328234BBD13002E61E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,17 +679,6 @@
 			targetProxy = 2BEB833D234BBD13002E61E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2BEB8329234BBD13002E61E4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BEB832A234BBD13002E61E4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2BEB8343234BBD13002E61E4 /* Debug */ = {
