@@ -75,7 +75,7 @@ enum AccountOptionsIcon: Int, CaseIterable, CustomStringConvertible {
         case .notification: return "notification"
         case .updateEmail: return "email"
         case .changePassword: return "password"
-        case .manageSubscription: return "Manage subscription"
+        case .manageSubscription: return "subcription"
         }
     }
 }

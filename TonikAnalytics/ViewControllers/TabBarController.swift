@@ -5,6 +5,10 @@
 import Foundation
 import UIKit
 class TabBarController: UITabBarController {
+    
+    // MARK: - Properties
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.isTranslucent = false

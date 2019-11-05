@@ -49,6 +49,8 @@
 		7410B654236FEDA800A2C62A /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */; };
 		7410B656236FEDD700A2C62A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B655236FEDD700A2C62A /* TermsViewController.swift */; };
 		7410B658236FEE1F00A2C62A /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */; };
+		74A9F5AA2370F16200DD248A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5A92370F16200DD248A /* Coordinator.swift */; };
+		74A9F5AC2370F25800DD248A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5AB2370F25700DD248A /* MainCoordinator.swift */; };
 		74B75FCD23627B5000A0E607 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B75FCC23627B5000A0E607 /* Router.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
 		74D79EB6234F834900054D1E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* NetworkService.swift */; };
@@ -126,6 +128,8 @@
 		7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		7410B655236FEDD700A2C62A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
+		74A9F5A92370F16200DD248A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		74A9F5AB2370F25700DD248A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		74B75FCC23627B5000A0E607 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D79EB5234F834900054D1E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		2BEB831D234BBD12002E61E4 /* TonikAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				74A9F5A82370F14700DD248A /* Coordinators */,
 				74B75FC7236236E400A0E607 /* Model */,
 				74D79EAA234F825000054D1E /* Services */,
 				2BEB835B234BC8EE002E61E4 /* Views */,
@@ -290,6 +295,15 @@
 				A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		74A9F5A82370F14700DD248A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				74A9F5A92370F16200DD248A /* Coordinator.swift */,
+				74A9F5AB2370F25700DD248A /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		74B75FC6236236A400A0E607 /* Delegates */ = {
@@ -570,8 +584,10 @@
 			files = (
 				7410B64C236E8A9500A2C62A /* UserInfoHeaderView.swift in Sources */,
 				7410B64E236FE90A00A2C62A /* UpdateEmailViewController.swift in Sources */,
+				74A9F5AA2370F16200DD248A /* Coordinator.swift in Sources */,
 				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
+				74A9F5AC2370F25800DD248A /* MainCoordinator.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
 				7410B650236FEB6200A2C62A /* ChangePasswordViewController.swift in Sources */,
 				7410B652236FEC2200A2C62A /* ManageSubcriptionViewController.swift in Sources */,
