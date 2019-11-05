@@ -36,7 +36,7 @@ class TrackedArtistsViewController: UIViewController{
 
 extension TrackedArtistsViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width - 32, height: 150)
+        return CGSize(width: collectionView.frame.width - 32, height: 125)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -57,7 +57,6 @@ extension TrackedArtistsViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrackedArtistCell.reUseID, for: indexPath) as! TrackedArtistCell
-        
         cell.artistName = "Sample Artist"
         return cell
     }

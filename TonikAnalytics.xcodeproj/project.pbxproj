@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00C878580F934096F945F3EF /* Pods_TonikAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD814ECE789890DDA4A6588 /* Pods_TonikAnalyticsTests.framework */; };
+		2B8E565D2370EFAC00CF4DF4 /* platformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E565C2370EFAC00CF4DF4 /* platformView.swift */; };
 		2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */; };
 		2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */; };
 		2BA5ABE3234F171000B09E6B /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5ABE2234F171000B09E6B /* BarGraphView.swift */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		1467FDA962F48C334A267CD0 /* Pods_TonikAnalytics_TonikAnalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TonikAnalytics_TonikAnalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8E565C2370EFAC00CF4DF4 /* platformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platformView.swift; sourceTree = "<group>"; };
 		2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
 		2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphButton.swift; sourceTree = "<group>"; };
 		2BA5ABE2234F171000B09E6B /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				74D79EB9234F9AF300054D1E /* SettingsHeaderView.swift */,
 				2BA5ABDE234D15D800B09E6B /* LineGraphView.swift */,
 				2BA5ABE2234F171000B09E6B /* BarGraphView.swift */,
+				2B8E565C2370EFAC00CF4DF4 /* platformView.swift */,
 				2BA5ABE0234D1D3300B09E6B /* GraphButton.swift */,
 				7410B64B236E8A9400A2C62A /* UserInfoHeaderView.swift */,
 			);
@@ -591,6 +594,7 @@
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
 				7410B6462368ECC600A2C62A /* AlertService.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
+				2B8E565D2370EFAC00CF4DF4 /* platformView.swift in Sources */,
 				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
 				2BE27F5B236FF5140003D115 /* TrackedArtistsViewController.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,

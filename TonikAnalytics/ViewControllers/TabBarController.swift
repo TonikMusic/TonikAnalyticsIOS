@@ -5,10 +5,13 @@
 import Foundation
 import UIKit
 class TabBarController: UITabBarController {
+    var addArtistButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.isTranslucent = false
         tabBar.barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
+        
         
         // NOTE: homeview controller
         let musicStats = TrackedArtistsViewController()
@@ -31,8 +34,27 @@ class TabBarController: UITabBarController {
         let controllers = [musicStats, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-        
+    
         setNeedsStatusBarAppearanceUpdate()
+        
+        setUpButton()
+    }
+    
+    func setUpButton(){
+        addArtistButton = UIButton(type: .roundedRect)
+        tabBar.add(subview: addArtistButton) { (v, p) in [
+            v.heightAnchor.constraint(equalToConstant: 75),
+            v.widthAnchor.constraint(equalToConstant: 75),
+            v.centerYAnchor.constraint(equalTo: tabBar.topAnchor),
+            v.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor)
+            ]}
+        
+        addArtistButton.setBackgroundImage(UIImage(named: "addButton"), for: .normal)
+        addArtistButton.layer.borderColor = UIColor.init(hexString: "#1D1E2E", alpha: 0.999).cgColor
+        addArtistButton.layer.borderWidth = 10
+        addArtistButton.layer.cornerRadius = addArtistButton.frame.width / 2
+        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
