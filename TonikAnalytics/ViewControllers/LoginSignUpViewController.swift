@@ -10,52 +10,54 @@ class LoginSignupViewController: UIViewController {
     
     // MARK: - Properties
     weak var coordinator: MainCoordinator?
+    lazy var gradientLayer: CAGradientLayer = CAGradientLayer()
+    lazy var gView: UIView = UIView()
     lazy var viewHeight = self.view.frame.height
     lazy var viewWidth = self.view.frame.width
     lazy var viewCenterY = self.view.frame.midY
     var addYAxisToLoginSignupView: NSLayoutConstraint!
     var addHeightPaddingToLoginSignupView: NSLayoutConstraint!
     var addYAxisToLogoView: NSLayoutConstraint!
-    let datePickerView: UIDatePicker = UIDatePicker()
-    
-    // NOTE: Explicitly being created when constraints are added
     lazy var loginSignupView: LoginSignUpView = self.createLoginSignUpView()
     lazy var logoView: LogoView = self.createLogoView()
     lazy var dontHaveAccountlable: Label = self.createDontHaveAccountlable()
     lazy var createAccountBtn: Button = self.createButton()
     lazy var loginSignUpBtn: Button = self.createLoginSignUpBtn()
     
+    var gradienLayer: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .white
-        
+        view.backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         createAccountBtn.addTarget(self, action: #selector(didPressAccountBtn), for: .touchUpInside)
         loginSignUpBtn.addTarget(self, action: #selector(didPressLoginSignupBtn), for: .touchUpInside)
         layout()
-        showDatePicker()
+        showGradient()
     }
     
     
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.view.endEditing(true)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        showGradient()
     }
     
+    func showGradient() {
+        gradientLayer = CAGradientLayer()
+
+
+        gradientLayer.frame = self.loginSignupView.bounds
+        gradientLayer.cornerRadius = loginSignupView.layer.cornerRadius
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.colors = [#colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor]
+
+        self.loginSignupView.layer.insertSublayer(gradientLayer, at: 0)
+    }
     
     private func showAlert(with message: String) {
         let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: message, alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
         present(alert, animated: true, completion: nil)
-    }
-    
-    /// NOTE: This funciton sets up the date picker along with a tool bar
-    private func showDatePicker() {
-        datePickerView.datePickerMode = .date
-        datePickerView.translatesAutoresizingMaskIntoConstraints = false
-        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
-        self.loginSignupView.dateOfBirth.inputView = datePickerView
     }
     
     // MARK: - Objective Methods
@@ -67,17 +69,9 @@ class LoginSignupViewController: UIViewController {
         addAnimationToViews()
     }
     
-    @objc func datePickerValueChanged() {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        self.loginSignupView.dateOfBirth.text = formatter.string(from: datePickerView.date)
-        
-    }
-    
     ///NOTE: handles email validity
     @objc func isValidEmail(_ sender: AnyObject?) {
         guard let email = sender?.text else { return }
-        
         let emailTest = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
         let result = emailTest.evaluate(with: email)
         
@@ -89,7 +83,6 @@ class LoginSignupViewController: UIViewController {
     }
     
     @objc func validatePassword(_ sender: AnyObject?) {
-           
         guard let password = sender?.text else { return }
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{10,}$")
         let result = passwordTest.evaluate(with: password)
@@ -112,13 +105,13 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.confirmPassword.isEnabled = true
             self.addYAxisToLogoView.constant = (-viewCenterY / 5) * 3.2
             self.addYAxisToLoginSignupView.constant = viewCenterY / 9 - 50
-            self.addHeightPaddingToLoginSignupView.constant = viewHeight / 2 + 50
+            self.addHeightPaddingToLoginSignupView.constant = viewHeight / 2 + 10
             self.loginSignupView.addTopPaddingToEmail.constant = 20
             self.loginSignupView.addTopPaddingPassword.constant = 20
             self.loginSignupView.addTopPaddingToConfirmPassword.constant = 20
-            self.loginSignupView.addTopPaddingToView.constant = 20
             self.loginSignupView.email.text = ""
             self.loginSignupView.password.text = ""
+            
 
             UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveEaseInOut, animations: {
 
@@ -128,12 +121,8 @@ class LoginSignupViewController: UIViewController {
                 self.loginSignupView.lineView1.alpha = 1
                 self.loginSignupView.confirmPassword.alpha = 1
                 self.loginSignupView.lineView4.alpha = 1
-                self.loginSignupView.toggleSwitch.alpha = 1
-                self.loginSignupView.artistLabel.alpha = 1
-                self.loginSignupView.dateOfBirth.alpha = 1
-                
+                self.gradientLayer.frame = self.loginSignupView.bounds
             })
-            
             
             UIView.animate(withDuration: 0.9) {
                 self.dontHaveAccountlable.alpha = 1
@@ -153,12 +142,11 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.addTopPaddingToEmail.constant = -40
             self.loginSignupView.addTopPaddingPassword.constant = 40
             self.loginSignupView.addTopPaddingToConfirmPassword.constant = -40
-            self.loginSignupView.addTopPaddingToView.constant = -40
             self.loginSignupView.email.text = ""
             self.loginSignupView.password.text = ""
             self.loginSignupView.userName.text = ""
             self.loginSignupView.confirmPassword.text = ""
-            
+//            gradientLayer.frame = self.loginSignupView.bounds
             UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveEaseInOut, animations: {
                 
                 self.view.layoutIfNeeded()
@@ -167,10 +155,7 @@ class LoginSignupViewController: UIViewController {
                 self.loginSignupView.lineView1.alpha = 0
                 self.loginSignupView.confirmPassword.alpha = 0
                 self.loginSignupView.lineView4.alpha = 0
-                self.loginSignupView.toggleSwitch.alpha = 0
-                self.loginSignupView.artistLabel.alpha = 0
-                self.loginSignupView.dateOfBirth.alpha = 0
-                
+                self.gradientLayer.frame = self.loginSignupView.bounds
             })
             
             
@@ -181,7 +166,6 @@ class LoginSignupViewController: UIViewController {
                 self.createAccountBtn.setTitle("Sign Up", for: .normal)
                 
             })
-
         }
     }
     

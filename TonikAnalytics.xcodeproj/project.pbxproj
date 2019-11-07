@@ -248,19 +248,13 @@
 		2BEB834E234BC22A002E61E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7429A34C2371FCE800BC6EA4 /* SettingsControllers */,
 				2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */,
 				2BE27F5A236FF5140003D115 /* TrackedArtistsViewController.swift */,
 				2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */,
 				2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */,
 				2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */,
-				2BEB8359234BC426002E61E4 /* SettingsTableViewController.swift */,
 				2BEB8386234BD898002E61E4 /* TabBarController.swift */,
-				7410B64D236FE90A00A2C62A /* UpdateEmailViewController.swift */,
-				7410B64F236FEB6200A2C62A /* ChangePasswordViewController.swift */,
-				7410B651236FEC2200A2C62A /* ManageSubcriptionViewController.swift */,
-				7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */,
-				7410B655236FEDD700A2C62A /* TermsViewController.swift */,
-				7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -312,6 +306,20 @@
 				A830F1278C21349CFC861F39 /* Pods-TonikAnalyticsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7429A34C2371FCE800BC6EA4 /* SettingsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7410B64D236FE90A00A2C62A /* UpdateEmailViewController.swift */,
+				7410B64F236FEB6200A2C62A /* ChangePasswordViewController.swift */,
+				7410B651236FEC2200A2C62A /* ManageSubcriptionViewController.swift */,
+				7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */,
+				7410B655236FEDD700A2C62A /* TermsViewController.swift */,
+				7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */,
+				2BEB8359234BC426002E61E4 /* SettingsTableViewController.swift */,
+			);
+			path = SettingsControllers;
 			sourceTree = "<group>";
 		};
 		74A9F5A82370F14700DD248A /* Coordinators */ = {
