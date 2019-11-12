@@ -9,7 +9,7 @@ import UIKit
 class LoginSignupViewController: UIViewController {
     
     // MARK: - Properties
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: AuthCoordinator?
     lazy var gradientLayer: CAGradientLayer = CAGradientLayer()
     lazy var gView: UIView = UIView()
     lazy var viewHeight = self.view.frame.height
@@ -24,7 +24,6 @@ class LoginSignupViewController: UIViewController {
     lazy var createAccountBtn: Button = self.createButton()
     lazy var loginSignUpBtn: Button = self.createLoginSignUpBtn()
     
-    var gradienLayer: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,27 +32,8 @@ class LoginSignupViewController: UIViewController {
         createAccountBtn.addTarget(self, action: #selector(didPressAccountBtn), for: .touchUpInside)
         loginSignUpBtn.addTarget(self, action: #selector(didPressLoginSignupBtn), for: .touchUpInside)
         layout()
-        showGradient()
     }
     
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        showGradient()
-    }
-    
-    func showGradient() {
-        gradientLayer = CAGradientLayer()
-
-
-        gradientLayer.frame = self.loginSignupView.bounds
-        gradientLayer.cornerRadius = loginSignupView.layer.cornerRadius
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
-        gradientLayer.colors = [#colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor, #colorLiteral(red: 0.1647058824, green: 0.1843137255, blue: 0.3411764706, alpha: 1).cgColor]
-
-        self.loginSignupView.layer.insertSublayer(gradientLayer, at: 0)
-    }
     
     private func showAlert(with message: String) {
         let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: message, alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
@@ -121,7 +101,6 @@ class LoginSignupViewController: UIViewController {
                 self.loginSignupView.lineView1.alpha = 1
                 self.loginSignupView.confirmPassword.alpha = 1
                 self.loginSignupView.lineView4.alpha = 1
-                self.gradientLayer.frame = self.loginSignupView.bounds
             })
             
             UIView.animate(withDuration: 0.9) {
@@ -146,7 +125,6 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.password.text = ""
             self.loginSignupView.userName.text = ""
             self.loginSignupView.confirmPassword.text = ""
-//            gradientLayer.frame = self.loginSignupView.bounds
             UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveEaseInOut, animations: {
                 
                 self.view.layoutIfNeeded()
@@ -155,7 +133,6 @@ class LoginSignupViewController: UIViewController {
                 self.loginSignupView.lineView1.alpha = 0
                 self.loginSignupView.confirmPassword.alpha = 0
                 self.loginSignupView.lineView4.alpha = 0
-                self.gradientLayer.frame = self.loginSignupView.bounds
             })
             
             

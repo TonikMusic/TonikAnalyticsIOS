@@ -10,11 +10,9 @@ import Foundation
 import UIKit
 
 
-protocol Coordinator: NSObject {
-    var childCoordinators: [Coordinator] { get set }
-    var navController: UINavigationController { get set }
+protocol Coordinator: class {
+//    var childCoordinators: [Coordinator] { get set }
     
-    func startWithHome()
-    func startWithLoginSignUp()
+    func start()
 }
 
