@@ -27,7 +27,7 @@ class SettingsTableViewController: UITableViewController {
         tableView.register(SettingsTableViewCell.self, forCellReuseIdentifier: SettingsTableViewCell.cellId)
         tableView.rowHeight = 50
         
-        let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 150)
+        let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 120)
         userInfoHeaderView = UserInfoHeaderView(frame: frame)
         tableView.tableHeaderView = userInfoHeaderView
         tableView.tableFooterView = View.initView(backgroundColor: #colorLiteral(red: 0.0862745098, green: 0.08235294118, blue: 0.1254901961, alpha: 1))

@@ -7,7 +7,7 @@ import IQKeyboardManagerSwift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var coordinator: MainCoordinator?
+    var coordinator: AppCoordinator?
     let userDefault = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -18,38 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = true
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        
-        let nav = UINavigationController()
-        configNavigation(navigationBar: nav.navigationBar)
-        coordinator = MainCoordinator(navigationController: nav)
-        
-        let tabBarController = TabBarController()
-        tabBarController.selectedIndex = 0
-        /****** delete after ********/
-        userDefault.set(false, forKey: "isUserLoggedIn")
+        userDefault.set(true, forKey: "isUserLoggedIn")
         userDefault.synchronize()
-        
-        if userDefault.bool(forKey: "isUserLoggedIn") {
-            window?.rootViewController = tabBarController
-        } else {
-            coordinator?.startWithLoginSignUp()
-            window?.rootViewController = nav
-        }
-        
-        // NOTE: Setting the root
+        coordinator = AppCoordinator(window: window!)
+        coordinator?.start()
         window?.makeKeyAndVisible()
-    }
-    
-    // NOTE: Setting UINavBar appearance
-    func configNavigation(navigationBar: UINavigationBar) {
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
-        UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

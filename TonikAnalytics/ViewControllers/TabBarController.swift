@@ -8,7 +8,7 @@ class TabBarController: UITabBarController {
     var addArtistButton: UIButton!
     
     // MARK: - Properties
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: TabBarCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,8 @@ class TabBarController: UITabBarController {
         let controllers = [musicStats, settings]
         // NOTE: maps all the controllers to a UINAvigationController
         viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
-    
+        updateNavigationUI()
+        
         setNeedsStatusBarAppearanceUpdate()
         
         setUpButton()
@@ -53,11 +54,20 @@ class TabBarController: UITabBarController {
             ]}
         
         addArtistButton.setBackgroundImage(UIImage(named: "addButton"), for: .normal)
+        addArtistButton.backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         addArtistButton.layer.borderColor = UIColor.init(hexString: "#1D1E2E", alpha: 0.999).cgColor
         addArtistButton.layer.borderWidth = 10
         addArtistButton.layer.cornerRadius = addArtistButton.frame.width / 2
         
 
+    }
+    
+    func updateNavigationUI() {
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance()
     }
     
     override func viewDidAppear(_ animated: Bool) {

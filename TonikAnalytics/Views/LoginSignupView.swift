@@ -9,17 +9,12 @@ class LoginSignUpView: UIView {
     // NOTE: instantiating UIViews
     let userName = TextField.initTextBox(.clear, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Username", 16)
     let lineView1 = View.initView(backgroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1))
-    let email = TextField.initTextBox(.white, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Email", 16)
+    let email = TextField.initTextBox(.clear, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Email", 16)
     let lineView2 = View.initView(backgroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1))
-    let password = TextField.initTextBox(.white, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Password", 16)
+    let password = TextField.initTextBox(.clear, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Password", 16)
     let lineView3 = View.initView(backgroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1))
-    let confirmPassword = TextField.initTextBox(.white, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Confirm Password", 16)
+    let confirmPassword = TextField.initTextBox(.clear, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Confirm Password", 16)
     let lineView4 = View.initView(backgroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1))
-    let dateOfBirth = TextField.initTextBox(.clear, #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), 0, .clear, "Date of Birth", 16)
-    
-    let toggleSwitch = UISwitch()
-    let artistLabel = Label.newLabel(title: "Are you an artist?", textColor: #colorLiteral(red: 0.568627451, green: 0.4705882353, blue: 0.4705882353, alpha: 1), textSize: 14)
-    let containerView = View.initView(backgroundColor: .clear)
     
     
     
@@ -44,10 +39,10 @@ class LoginSignUpView: UIView {
     
     // NOTE: this function constraints the view components
     private func setUpView() {
-        self.backgroundColor = .white
         self.layer.cornerRadius = 25
         self.dropShadow()
-        
+        userName.alpha = 0
+        confirmPassword.alpha = 0
         
         
         
@@ -121,49 +116,6 @@ class LoginSignUpView: UIView {
         lineView4.leadingAnchor.constraint(equalTo: confirmPassword.leadingAnchor, constant: 0).isActive = true
         lineView4.trailingAnchor.constraint(equalTo: confirmPassword.trailingAnchor, constant: 0).isActive = true
         lineView4.heightAnchor.constraint(equalTo: lineView3.heightAnchor, constant: 0).isActive = true
-        
-        
-        
-        self.addSubview(containerView)
-        self.sendSubviewToBack(containerView)
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        addTopPaddingToView = containerView.topAnchor.constraint(equalTo: lineView4.topAnchor, constant: -40)
-        addTopPaddingToView.isActive = true
-        containerView.leadingAnchor.constraint(equalTo: lineView4.leadingAnchor, constant: 0).isActive = true
-        containerView.trailingAnchor.constraint(equalTo: lineView4.trailingAnchor, constant: 0).isActive = true
-        containerView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        
-        containerView.addSubview(toggleSwitch)
-        containerView.sendSubviewToBack(toggleSwitch)
-        toggleSwitch.translatesAutoresizingMaskIntoConstraints = false
-        toggleSwitch.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0).isActive = true
-        toggleSwitch.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 0).isActive = true
-        toggleSwitch.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0).isActive = true
-        toggleSwitch.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        
-        containerView.addSubview(artistLabel)
-        containerView.sendSubviewToBack(artistLabel)
-        artistLabel.translatesAutoresizingMaskIntoConstraints = false
-        artistLabel.leadingAnchor.constraint(equalTo: toggleSwitch.trailingAnchor, constant: 10).isActive = true
-        artistLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -15).isActive = true
-        artistLabel.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        
-        
-        containerView.addSubview(dateOfBirth)
-        containerView.sendSubviewToBack(dateOfBirth)
-        dateOfBirth.translatesAutoresizingMaskIntoConstraints = false
-        dateOfBirth.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0).isActive = true
-//        dateOfBirth.leadingAnchor.constraint(equalTo: artistLabel.trailingAnchor, constant: 20).isActive = true
-        dateOfBirth.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: 0).isActive = true
-        dateOfBirth.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10).isActive = true
-        dateOfBirth.widthAnchor.constraint(equalToConstant: 98).isActive = true
-        
-        
-        
-        
-        
         
     }
     

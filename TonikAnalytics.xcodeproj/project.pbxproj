@@ -52,8 +52,10 @@
 		7410B654236FEDA800A2C62A /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */; };
 		7410B656236FEDD700A2C62A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B655236FEDD700A2C62A /* TermsViewController.swift */; };
 		7410B658236FEE1F00A2C62A /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */; };
+		745A08F3237A31FB003FC6E2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A08F2237A31FB003FC6E2 /* AppCoordinator.swift */; };
+		745A08F5237A4BBA003FC6E2 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */; };
 		74A9F5AA2370F16200DD248A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5A92370F16200DD248A /* Coordinator.swift */; };
-		74A9F5AC2370F25800DD248A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5AB2370F25700DD248A /* MainCoordinator.swift */; };
+		74A9F5AC2370F25800DD248A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */; };
 		74B75FCD23627B5000A0E607 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B75FCC23627B5000A0E607 /* Router.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
 		74D79EB6234F834900054D1E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* NetworkService.swift */; };
@@ -134,8 +136,10 @@
 		7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		7410B655236FEDD700A2C62A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
+		745A08F2237A31FB003FC6E2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		74A9F5A92370F16200DD248A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		74A9F5AB2370F25700DD248A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		74B75FCC23627B5000A0E607 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D79EB5234F834900054D1E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -213,12 +217,12 @@
 		2BEB831D234BBD12002E61E4 /* TonikAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				74B75FC6236236A400A0E607 /* Delegates */,
 				74A9F5A82370F14700DD248A /* Coordinators */,
 				74B75FC7236236E400A0E607 /* Model */,
 				74D79EAA234F825000054D1E /* Services */,
 				2BEB835B234BC8EE002E61E4 /* Views */,
 				2BEB834E234BC22A002E61E4 /* ViewControllers */,
-				74B75FC6236236A400A0E607 /* Delegates */,
 				2BEB836C234BCB20002E61E4 /* Extensions */,
 				2BEB8327234BBD13002E61E4 /* Assets.xcassets */,
 				2BEB832C234BBD13002E61E4 /* Info.plist */,
@@ -248,19 +252,13 @@
 		2BEB834E234BC22A002E61E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7429A34C2371FCE800BC6EA4 /* SettingsControllers */,
 				2BEB834F234BC23D002E61E4 /* SocialAnalyticsViewController.swift */,
 				2BE27F5A236FF5140003D115 /* TrackedArtistsViewController.swift */,
 				2BEB8351234BC30D002E61E4 /* LoginSignUpViewController.swift */,
 				2BEB8353234BC32B002E61E4 /* OnBoardingViewController.swift */,
 				2BEB8355234BC342002E61E4 /* MusicAnalyticsViewController.swift */,
-				2BEB8359234BC426002E61E4 /* SettingsTableViewController.swift */,
 				2BEB8386234BD898002E61E4 /* TabBarController.swift */,
-				7410B64D236FE90A00A2C62A /* UpdateEmailViewController.swift */,
-				7410B64F236FEB6200A2C62A /* ChangePasswordViewController.swift */,
-				7410B651236FEC2200A2C62A /* ManageSubcriptionViewController.swift */,
-				7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */,
-				7410B655236FEDD700A2C62A /* TermsViewController.swift */,
-				7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -314,11 +312,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7429A34C2371FCE800BC6EA4 /* SettingsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7410B64D236FE90A00A2C62A /* UpdateEmailViewController.swift */,
+				7410B64F236FEB6200A2C62A /* ChangePasswordViewController.swift */,
+				7410B651236FEC2200A2C62A /* ManageSubcriptionViewController.swift */,
+				7410B653236FEDA800A2C62A /* PrivacyPolicyViewController.swift */,
+				7410B655236FEDD700A2C62A /* TermsViewController.swift */,
+				7410B657236FEE1F00A2C62A /* HelpAndSupportViewController.swift */,
+				2BEB8359234BC426002E61E4 /* SettingsTableViewController.swift */,
+			);
+			path = SettingsControllers;
+			sourceTree = "<group>";
+		};
 		74A9F5A82370F14700DD248A /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
 				74A9F5A92370F16200DD248A /* Coordinator.swift */,
-				74A9F5AB2370F25700DD248A /* MainCoordinator.swift */,
+				74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */,
+				745A08F2237A31FB003FC6E2 /* AppCoordinator.swift */,
+				745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -605,7 +619,7 @@
 				74A9F5AA2370F16200DD248A /* Coordinator.swift in Sources */,
 				2BA5ABDF234D15D800B09E6B /* LineGraphView.swift in Sources */,
 				2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */,
-				74A9F5AC2370F25800DD248A /* MainCoordinator.swift in Sources */,
+				74A9F5AC2370F25800DD248A /* AuthCoordinator.swift in Sources */,
 				2BEB8356234BC342002E61E4 /* MusicAnalyticsViewController.swift in Sources */,
 				7410B650236FEB6200A2C62A /* ChangePasswordViewController.swift in Sources */,
 				7410B652236FEC2200A2C62A /* ManageSubcriptionViewController.swift in Sources */,
@@ -630,11 +644,13 @@
 				2BEB8361234BC9BB002E61E4 /* LoginSignupView.swift in Sources */,
 				2BEB8380234BCEC6002E61E4 /* LoginSignUpControllerExt.swift in Sources */,
 				2BEB8382234BCF0D002E61E4 /* KeyBoardExt.swift in Sources */,
+				745A08F5237A4BBA003FC6E2 /* TabBarCoordinator.swift in Sources */,
 				2BEB8321234BBD12002E61E4 /* SceneDelegate.swift in Sources */,
 				7410B654236FEDA800A2C62A /* PrivacyPolicyViewController.swift in Sources */,
 				7410B6462368ECC600A2C62A /* AlertService.swift in Sources */,
 				2BEB8370234BCBEB002E61E4 /* Image.swift in Sources */,
 				2B8E565D2370EFAC00CF4DF4 /* platformView.swift in Sources */,
+				745A08F3237A31FB003FC6E2 /* AppCoordinator.swift in Sources */,
 				74D79EBA234F9AF300054D1E /* SettingsHeaderView.swift in Sources */,
 				2BE27F5B236FF5140003D115 /* TrackedArtistsViewController.swift in Sources */,
 				2BEB8376234BCCEE002E61E4 /* UIColorExt.swift in Sources */,
