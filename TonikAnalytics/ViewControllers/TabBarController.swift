@@ -54,6 +54,7 @@ class TabBarController: UITabBarController {
             ]}
         
         addArtistButton.setBackgroundImage(UIImage(named: "addButton"), for: .normal)
+        addArtistButton.backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
         addArtistButton.layer.borderColor = UIColor.init(hexString: "#1D1E2E", alpha: 0.999).cgColor
         addArtistButton.layer.borderWidth = 10
         addArtistButton.layer.cornerRadius = addArtistButton.frame.width / 2
