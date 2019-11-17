@@ -8,15 +8,24 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class SceneCoordinator: Coordinator {
+    
+    // MARK: - Properties
+    
     let window: UIWindow!
     let userDefault = UserDefaults.standard
+    
+    // MARK: - init
     
     init(window: UIWindow) {
         self.window = window
     }
     
+    // MARK: - Methods
+    
     func start() {
+        userDefault.set(false, forKey: "isUserLoggedIn")
+        userDefault.synchronize()
         if userDefault.bool(forKey: "isUserLoggedIn") {
             showTabBar()
         } else {

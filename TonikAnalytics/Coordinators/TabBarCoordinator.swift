@@ -10,15 +10,24 @@ import UIKit
 
 
 class TabBarCoordinator: Coordinator {
-    let window: UIWindow
+    
+    // MARK: - Properties
+    
+    let window: UIWindow!
+    var viewController: TabBarController!
+    
+    // MARK: - Init
     
     init(window: UIWindow) {
         self.window = window
+        self.viewController = TabBarController()
     }
     
+    // MARK: - Methods
+    
     func start() {
-        let tabBarController = TabBarController()
-        tabBarController.selectedIndex = 0
-        window.rootViewController = tabBarController
+        self.viewController.coordinator = self
+        self.viewController.selectedIndex = 0
+        window.rootViewController = self.viewController
     }
 }

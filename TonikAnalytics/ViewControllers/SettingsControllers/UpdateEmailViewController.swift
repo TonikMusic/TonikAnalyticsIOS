@@ -12,6 +12,7 @@ import UIKit
 
 class UpdateEmailViewController: UIViewController {
     
+    var coordinator: SettingsCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

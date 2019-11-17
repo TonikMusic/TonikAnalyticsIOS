@@ -11,6 +11,7 @@ class SettingsTableViewController: UITableViewController {
     
     // MARK: - Properties
     var userInfoHeaderView: UserInfoHeaderView!
+    var coordinator: SettingsCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,23 +78,17 @@ extension SettingsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath {
         case [0, 2]:
-            let updateEmailVC = UpdateEmailViewController()
-            self.navigationController?.pushViewController(updateEmailVC, animated: true)
+            coordinator?.navigate(to: .email)
         case [0, 3]:
-            let changePasswordVC = ChangePasswordViewController()
-            self.navigationController?.pushViewController(changePasswordVC, animated: true)
+            coordinator?.navigate(to: .updatePassword)
         case [0, 4]:
-            let manageSubcriptionsVC = ManageSubcriptionViewController()
-            self.navigationController?.pushViewController(manageSubcriptionsVC, animated: true)
+            coordinator?.navigate(to: .subscription)
         case [1, 0]:
-            let privacyPolicyVC = PrivacyPolicyViewController()
-            self.navigationController?.pushViewController(privacyPolicyVC, animated: true)
+            coordinator?.navigate(to: .privacyPolicy)
         case [1, 1]:
-            let termsVC = TermsViewController()
-            self.navigationController?.pushViewController(termsVC, animated: true)
+            coordinator?.navigate(to: .terms)
         case [1, 2]:
-            let helpAndSupportVC = HelpAndSupportViewController()
-            self.navigationController?.pushViewController(helpAndSupportVC, animated: true)
+            coordinator?.navigate(to: .helpAndSupport)
         default:
             break
         }
