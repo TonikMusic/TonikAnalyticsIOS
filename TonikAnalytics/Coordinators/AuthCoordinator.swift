@@ -9,23 +9,28 @@
 import Foundation
 import UIKit
 
-class AuthCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
-//    var childCoordinators = [Coordinator]()
-    let navController: UINavigationController
-    let window: UIWindow
+class AuthCoordinator: NSObject, Coordinator {
+    //MARK: - Protocols Stubs & Preperties
+    
+    let window: UIWindow!
+    var childCoordinators = [Coordinator]()
+    var navController: UINavigationController!
+    var viewController: LoginSignupViewController!
+    
 
+    // MARK: - Init
     
     init(window: UIWindow, navigationController: UINavigationController) {
         self.window = window
         self.navController = navigationController
+        self.viewController = LoginSignupViewController()
     }
     
+    // MARK: - Methods
+    
     func start() {
-        let vc = LoginSignupViewController()
-        vc.coordinator = self
-        navController.delegate = self
-        navController.navigationBar.isHidden = true
-        navController.viewControllers = [vc]
-        window.rootViewController = navController
+        self.viewController.coordinator = self
+        self.navController.navigationBar.isHidden = true
+        window.rootViewController = self.navController
     }
 }

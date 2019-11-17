@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class TrackedArtistsViewController: UIViewController{
+    weak var coordinator: TrackedArtistsCoordinator?
     var collectionView: UICollectionView!
     let collectionFlowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     

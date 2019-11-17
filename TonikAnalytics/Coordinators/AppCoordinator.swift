@@ -9,12 +9,19 @@
 import UIKit
 
 class AppCoordinator: Coordinator {
+    
+    // MARK: - Properties
+    
     let window: UIWindow!
     let userDefault = UserDefaults.standard
+    
+    // MARK: - init
     
     init(window: UIWindow) {
         self.window = window
     }
+    
+    // MARK: - Methods
     
     func start() {
         if userDefault.bool(forKey: "isUserLoggedIn") {

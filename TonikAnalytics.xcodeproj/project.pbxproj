@@ -42,6 +42,7 @@
 		2BEB8385234BD085002E61E4 /* ViewTextBoxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8384234BD085002E61E4 /* ViewTextBoxExt.swift */; };
 		2BEB8387234BD898002E61E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB8386234BD898002E61E4 /* TabBarController.swift */; };
 		2BF90C44237124B00090AA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF90C43237124B00090AA6A /* LaunchScreen.storyboard */; };
+		7402E47F237B710500F882FF /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7402E47E237B710500F882FF /* SettingsCoordinator.swift */; };
 		7410B6462368ECC600A2C62A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6452368ECC600A2C62A /* AlertService.swift */; };
 		7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */; };
 		7410B64A236D445600A2C62A /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410B649236D445600A2C62A /* SettingsSection.swift */; };
@@ -56,6 +57,7 @@
 		745A08F5237A4BBA003FC6E2 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */; };
 		74A9F5AA2370F16200DD248A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5A92370F16200DD248A /* Coordinator.swift */; };
 		74A9F5AC2370F25800DD248A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */; };
+		74ABDBF6237CDFD300FB8206 /* TrackedArtistsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABDBF5237CDFD300FB8206 /* TrackedArtistsCoordinator.swift */; };
 		74B75FCD23627B5000A0E607 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B75FCC23627B5000A0E607 /* Router.swift */; };
 		74D79EB4234F831D00054D1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB3234F831D00054D1E /* User.swift */; };
 		74D79EB6234F834900054D1E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79EB5234F834900054D1E /* NetworkService.swift */; };
@@ -126,6 +128,7 @@
 		2BF90C43237124B00090AA6A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556EB9DBB2B21462F298D7C3 /* Pods-TonikAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics/Pods-TonikAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		5CAD1F034F26E821B6058D41 /* Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; path = "Target Support Files/Pods-TonikAnalytics-TonikAnalyticsUITests/Pods-TonikAnalytics-TonikAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7402E47E237B710500F882FF /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		7410B6452368ECC600A2C62A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		7410B6472368F9DD00A2C62A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		7410B649236D445600A2C62A /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		74A9F5A92370F16200DD248A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		74ABDBF5237CDFD300FB8206 /* TrackedArtistsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedArtistsCoordinator.swift; sourceTree = "<group>"; };
 		74B75FCC23627B5000A0E607 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		74D79EB3234F831D00054D1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D79EB5234F834900054D1E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -333,6 +337,8 @@
 				74A9F5AB2370F25700DD248A /* AuthCoordinator.swift */,
 				745A08F2237A31FB003FC6E2 /* AppCoordinator.swift */,
 				745A08F4237A4BBA003FC6E2 /* TabBarCoordinator.swift */,
+				7402E47E237B710500F882FF /* SettingsCoordinator.swift */,
+				74ABDBF5237CDFD300FB8206 /* TrackedArtistsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -632,12 +638,14 @@
 				2BEB8363234BCA3D002E61E4 /* LogoView.swift in Sources */,
 				74D79EB4234F831D00054D1E /* User.swift in Sources */,
 				2BEB836E234BCBCD002E61E4 /* Button.swift in Sources */,
+				74ABDBF6237CDFD300FB8206 /* TrackedArtistsCoordinator.swift in Sources */,
 				7410B6482368F9DD00A2C62A /* UIViewControllerExt.swift in Sources */,
 				74B75FCD23627B5000A0E607 /* Router.swift in Sources */,
 				2BEB835A234BC426002E61E4 /* SettingsTableViewController.swift in Sources */,
 				2BEB831F234BBD12002E61E4 /* AppDelegate.swift in Sources */,
 				74D79EB8234F9AE000054D1E /* SettingsTableViewCell.swift in Sources */,
 				74D79EB6234F834900054D1E /* NetworkService.swift in Sources */,
+				7402E47F237B710500F882FF /* SettingsCoordinator.swift in Sources */,
 				2BEB837E234BCE9D002E61E4 /* View.swift in Sources */,
 				2BEB837A234BCE65002E61E4 /* UIToolbarExt.swift in Sources */,
 				2BA5ABE1234D1D3300B09E6B /* GraphButton.swift in Sources */,
