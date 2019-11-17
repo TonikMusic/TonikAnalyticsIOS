@@ -7,7 +7,7 @@ import IQKeyboardManagerSwift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var coordinator: AppCoordinator?
+    var coordinator: SceneCoordinator?
     let userDefault = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,9 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-//        userDefault.set(true, forKey: "isUserLoggedIn")
-//        userDefault.synchronize()
-        coordinator = AppCoordinator(window: window!)
+        coordinator = SceneCoordinator(window: window!)
         coordinator?.start()
         window?.makeKeyAndVisible()
     }

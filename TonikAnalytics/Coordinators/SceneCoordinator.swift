@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class SceneCoordinator: Coordinator {
     
     // MARK: - Properties
     
@@ -24,6 +24,8 @@ class AppCoordinator: Coordinator {
     // MARK: - Methods
     
     func start() {
+        userDefault.set(false, forKey: "isUserLoggedIn")
+        userDefault.synchronize()
         if userDefault.bool(forKey: "isUserLoggedIn") {
             showTabBar()
         } else {
