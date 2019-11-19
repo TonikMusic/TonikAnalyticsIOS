@@ -24,9 +24,9 @@ class SceneCoordinator: Coordinator {
     // MARK: - Methods
     
     func start() {
-        userDefault.set(false, forKey: "isUserLoggedIn")
-        userDefault.synchronize()
-        if userDefault.bool(forKey: "isUserLoggedIn") {
+//        userDefault.set(true, forKey: "isUserLoggedIn")
+//        userDefault.synchronize()
+        if userDefault.object(forKey: "isUserLoggedIn") != nil {
             showTabBar()
         } else {
             showAuth()

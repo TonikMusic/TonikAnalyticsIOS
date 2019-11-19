@@ -9,32 +9,58 @@
 import Foundation
 import UIKit
 
-fileprivate var aView: UIView?
+fileprivate var container: UIView!
 fileprivate var blurEffectView: UIVisualEffectView?
+
 
 extension UIViewController {
     
     func showSpinner() {
-        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialDark)
+        container = UIView()
+        container.layer.masksToBounds = false
+        container.layer.cornerRadius = 25
+        self.view.add(subview: container) { (v, p) in [
+            v.heightAnchor.constraint(equalToConstant: 120),
+            v.widthAnchor.constraint(equalToConstant: 140),
+            v.centerXAnchor.constraint(equalTo: p.centerXAnchor),
+            v.centerYAnchor.constraint(equalTo: p.centerYAnchor)
+            ]}
+        
+        
+        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterial)
         blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView?.frame = view.bounds
-        blurEffectView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.view.addSubview(blurEffectView!)
-        aView = UIView(frame: self.view.frame)
+        blurEffectView?.layer.masksToBounds = false
+        blurEffectView?.clipsToBounds = true
+        blurEffectView?.layer.cornerRadius = 20
+        blurEffectView?.isOpaque = true
+        blurEffectView?.frame = container.bounds
+        container.addSubview(blurEffectView!)
         
         
-        let activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator.color = .white
-        activityIndicator.center = aView!.center
-        activityIndicator.startAnimating()
-        aView?.addSubview(activityIndicator)
-        self.view.addSubview(aView!)
+        
+        let activityIndicatorView = UIActivityIndicatorView(style: .large)
+        activityIndicatorView.color = .white
+        activityIndicatorView.startAnimating()
+        container.add(subview: activityIndicatorView) { (v, p) in [
+            v.centerXAnchor.constraint(equalTo: container.centerXAnchor),
+            v.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: -10)
+            ]}
+        
+        let label = Label.newLabel(title: "Loading...", textColor: .black, textSize: 18)
+        label.textAlignment = .center
+        container.add(subview: label) { (v, p) in [
+            v.heightAnchor.constraint(equalToConstant: 20),
+            v.topAnchor.constraint(equalTo: activityIndicatorView.bottomAnchor, constant: 10),
+            v.leadingAnchor.constraint(equalTo: p.leadingAnchor, constant: 10),
+            v.trailingAnchor.constraint(equalTo: p.trailingAnchor, constant: -10)
+            ]}
+        
     }
     
     func removeSpinner() {
         blurEffectView?.removeFromSuperview()
-        aView?.removeFromSuperview()
+        container?.removeFromSuperview()
         blurEffectView = nil
-        aView = nil
+        container = nil
     }
 }

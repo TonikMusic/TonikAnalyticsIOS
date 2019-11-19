@@ -19,6 +19,7 @@ class SettingsCoordinator: DefaultCoordinator {
         case privacyPolicy
         case terms
         case helpAndSupport
+        case loginSignUp
     }
     
     var navController: UINavigationController!
@@ -39,8 +40,30 @@ class SettingsCoordinator: DefaultCoordinator {
     }
     
     func navigate(to destination: Destination) {
-        let vc = makeViewController(for: destination)
-        self.navController.pushViewController(vc, animated: true)
+        switch destination {
+        case .email:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .updatePassword:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .privacyPolicy:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .subscription:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .helpAndSupport:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .terms:
+            let vc = makeViewController(for: destination)
+            self.navController.pushViewController(vc, animated: true)
+        case .loginSignUp:
+            let vc = makeViewController(for: destination)
+            vc.modalPresentationStyle = .fullScreen
+            self.navController.present(vc, animated: true, completion: nil)
+        }
     }
     
     func makeViewController(for destination: Destination) -> UIViewController {
@@ -57,6 +80,8 @@ class SettingsCoordinator: DefaultCoordinator {
             return TermsViewController()
         case .helpAndSupport:
             return HelpAndSupportViewController()
+        case .loginSignUp:
+            return LoginSignupViewController()
         }
     }
 }

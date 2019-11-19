@@ -11,7 +11,7 @@ struct OnBoardingContent {
 
 class OnBoardingViewController: UICollectionViewController {
     
-    
+    let userDefaults = UserDefaults.standard
     private let pages: [OnBoardingContent] = [
         OnBoardingContent.init(imgName: "onBoarding1", text: "Check out the latest news and upcoming artist"),
         OnBoardingContent.init(imgName: "onBoarding2", text: "Interact with your community through post and keep them updated!"),

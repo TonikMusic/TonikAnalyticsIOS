@@ -21,8 +21,6 @@ class OnBoardingPageCell: UICollectionViewCell {
     
     
     func setupCell() {
-        
-        
         let labelHeight = onBoardingLabel.optimalHeight
         onBoardingLabel.frame = CGRect(x: onBoardingLabel.frame.origin.x, y: onBoardingLabel.frame.origin.y, width: onBoardingLabel.frame.width, height: labelHeight)
         onBoardingLabel.textAlignment = .center

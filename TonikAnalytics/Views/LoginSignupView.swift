@@ -40,6 +40,7 @@ class LoginSignUpView: UIView {
     // NOTE: this function constraints the view components
     private func setUpView() {
         self.layer.cornerRadius = 25
+        self.backgroundColor = UIColor(patternImage: UIImage(named: "gradient")!)
         self.dropShadow()
         userName.alpha = 0
         confirmPassword.alpha = 0

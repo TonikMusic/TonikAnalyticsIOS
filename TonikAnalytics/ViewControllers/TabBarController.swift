@@ -4,11 +4,20 @@
 //
 import Foundation
 import UIKit
+
+let signout = "user.signOut"
+
 class TabBarController: UITabBarController {
     
     // MARK: - Properties
     var addArtistButton: UIButton!
     var coordinator: TabBarCoordinator!
+    let signOutName = Notification.Name(signout)
+    
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +26,12 @@ class TabBarController: UITabBarController {
         updateNavigationUI()
         setNeedsStatusBarAppearanceUpdate()
         setUpButton()
+        createObserver()
     }
     
     func setupTabBar() {
         tabBar.isTranslucent = false
-        tabBar.barTintColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
+        tabBar.barTintColor = #colorLiteral(red: 0.1294117647, green: 0.1411764706, blue: 0.2352941176, alpha: 1)
         
         // NOTE: homeview controller
         var homeIcon = UIImage(named: "homeIcon")
@@ -75,6 +85,18 @@ class TabBarController: UITabBarController {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance()
+    }
+    
+    func createObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(signOut), name: signOutName, object: nil)
+    }
+    
+    
+    @objc func signOut(notification: NSNotification) {
+        if notification.name == signOutName {
+            print("Trying to signout")
+//            coordinator
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
