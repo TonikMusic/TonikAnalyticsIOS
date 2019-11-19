@@ -25,3 +25,10 @@ protocol DefaultCoordinator: class {
     func makeViewController(for destination: Destination) -> UIViewController
 }
 
+
+enum Transition {
+    case present
+    case push
+    case dismiss
+    case pop
+}

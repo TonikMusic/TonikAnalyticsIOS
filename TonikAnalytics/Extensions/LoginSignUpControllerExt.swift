@@ -72,7 +72,7 @@ extension LoginSignupViewController {
     func layoutLogoView() {
         view.addSubview(logoView)
         logoView.translatesAutoresizingMaskIntoConstraints = false
-        addYAxisToLogoView = logoView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -(viewCenterY / 6) * 2)
+        addYAxisToLogoView = logoView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -(viewCenterY / 6) * 2.1 + 0.01)
         addYAxisToLogoView.isActive = true
         logoView.leadingAnchor.constraint(equalTo: loginSignupView.leadingAnchor, constant: 10).isActive = true
         logoView.trailingAnchor.constraint(equalTo: loginSignupView.trailingAnchor, constant: -10).isActive = true
@@ -98,11 +98,11 @@ extension LoginSignupViewController {
     }
     
     func layoutCreateAccountBtn() {
-        view.addSubview(createAccountBtn)
-        createAccountBtn.centerYAnchor.constraint(equalTo: dontHaveAccountlable.centerYAnchor, constant: 0).isActive = true
-        createAccountBtn.trailingAnchor.constraint(equalTo: loginSignupView.trailingAnchor, constant: -15).isActive = true
-        createAccountBtn.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        createAccountBtn.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        createAccountBtn.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        view.addSubview(accountBtn)
+        accountBtn.centerYAnchor.constraint(equalTo: dontHaveAccountlable.centerYAnchor, constant: 0).isActive = true
+        accountBtn.trailingAnchor.constraint(equalTo: loginSignupView.trailingAnchor, constant: -15).isActive = true
+        accountBtn.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        accountBtn.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        accountBtn.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
 }

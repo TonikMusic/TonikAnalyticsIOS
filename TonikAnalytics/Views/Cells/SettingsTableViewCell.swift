@@ -24,12 +24,13 @@ class SettingsTableViewCell: UITableViewCell {
             titleLabel.text = sectionType.description
             rightImageView.isHidden = !sectionType.containsArrow
             switchControl.isHidden = !sectionType.containsSwitch
+            switchControl.isOn = sectionType.switchIsOn
         }
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
+        backgroundColor = #colorLiteral(red: 0.1218653247, green: 0.1285091119, blue: 0.202769639, alpha: 1)
         layout()
     }
     

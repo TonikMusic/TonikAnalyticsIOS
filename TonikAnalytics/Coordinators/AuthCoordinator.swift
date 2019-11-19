@@ -31,6 +31,7 @@ class AuthCoordinator: NSObject, Coordinator {
     func start() {
         self.viewController.coordinator = self
         self.navController.navigationBar.isHidden = true
+        self.navController.viewControllers = [viewController]
         window.rootViewController = self.navController
     }
 }

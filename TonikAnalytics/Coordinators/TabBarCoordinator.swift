@@ -13,6 +13,10 @@ class TabBarCoordinator: Coordinator {
     
     // MARK: - Properties
     
+    enum Destination {
+        case signOut
+    }
+    
     let window: UIWindow!
     var viewController: TabBarController!
     
@@ -29,5 +33,20 @@ class TabBarCoordinator: Coordinator {
         self.viewController.coordinator = self
         self.viewController.selectedIndex = 0
         window.rootViewController = self.viewController
+    }
+    
+    func navigate(to destination: Destination) {
+        switch destination {
+        case .signOut:
+            let vc = makeViewController(for: .signOut)
+//            self.
+        }
+    }
+    
+    
+    func makeViewController(for destination: Destination) -> UIViewController {
+        switch destination {
+        case .signOut: return LoginSignupViewController()
+        }
     }
 }

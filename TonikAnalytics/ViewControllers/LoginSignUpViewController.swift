@@ -9,27 +9,27 @@ import UIKit
 class LoginSignupViewController: UIViewController {
     
     // MARK: - Properties
-    weak var coordinator: AuthCoordinator?
-    lazy var gradientLayer: CAGradientLayer = CAGradientLayer()
-    lazy var gView: UIView = UIView()
+    var coordinator: AuthCoordinator?
+    lazy var loginSignupView: LoginSignUpView = self.createLoginSignUpView()
+    lazy var logoView: LogoView = self.createLogoView()
+    lazy var dontHaveAccountlable: Label = self.createDontHaveAccountlable()
+    lazy var accountBtn: Button = self.createButton()
+    lazy var loginSignUpBtn: Button = self.createLoginSignUpBtn()
     lazy var viewHeight = self.view.frame.height
     lazy var viewWidth = self.view.frame.width
     lazy var viewCenterY = self.view.frame.midY
     var addYAxisToLoginSignupView: NSLayoutConstraint!
     var addHeightPaddingToLoginSignupView: NSLayoutConstraint!
     var addYAxisToLogoView: NSLayoutConstraint!
-    lazy var loginSignupView: LoginSignUpView = self.createLoginSignUpView()
-    lazy var logoView: LogoView = self.createLogoView()
-    lazy var dontHaveAccountlable: Label = self.createDontHaveAccountlable()
-    lazy var createAccountBtn: Button = self.createButton()
-    lazy var loginSignUpBtn: Button = self.createLoginSignUpBtn()
+    let userDefault = UserDefaults.standard
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1176470588, blue: 0.1803921569, alpha: 1)
-        createAccountBtn.addTarget(self, action: #selector(didPressAccountBtn), for: .touchUpInside)
+        accountBtn.addTarget(self, action: #selector(didPressAccountBtn), for: .touchUpInside)
         loginSignUpBtn.addTarget(self, action: #selector(didPressLoginSignupBtn), for: .touchUpInside)
         layout()
     }
@@ -38,6 +38,15 @@ class LoginSignupViewController: UIViewController {
     private func showAlert(with message: String) {
         let alert = AlertService.setupAlert(alertTitle: "Error", alertMessage: message, alertStyle: .alert, actionTitle: "OK", actionStyle: .cancel)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func uiCompenentsEnable( isEnabled: Bool) {
+        self.loginSignupView.userName.isUserInteractionEnabled = isEnabled
+        self.loginSignupView.email.isUserInteractionEnabled = isEnabled
+        self.loginSignupView.password.isUserInteractionEnabled = isEnabled
+        self.loginSignupView.confirmPassword.isUserInteractionEnabled = isEnabled
+        self.loginSignUpBtn.isUserInteractionEnabled = isEnabled
+        self.accountBtn.isUserInteractionEnabled = isEnabled
     }
     
     // MARK: - Objective Methods
@@ -64,7 +73,7 @@ class LoginSignupViewController: UIViewController {
     
     @objc func validatePassword(_ sender: AnyObject?) {
         guard let password = sender?.text else { return }
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{10,}$")
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{7,}$")
         let result = passwordTest.evaluate(with: password)
 
         if result != true {
@@ -79,11 +88,11 @@ class LoginSignupViewController: UIViewController {
     /// NOTE: This function animates the given views
     private func addAnimationToViews() {
         
-        if  createAccountBtn.currentTitle == "Sign Up" {
+        if  accountBtn.currentTitle == "Sign Up" {
             
             self.loginSignupView.userName.isEnabled = true
             self.loginSignupView.confirmPassword.isEnabled = true
-            self.addYAxisToLogoView.constant = (-viewCenterY / 5) * 3.2
+            self.addYAxisToLogoView.constant = (-viewCenterY / 5) * 3.1 + 0.085
             self.addYAxisToLoginSignupView.constant = viewCenterY / 9 - 50
             self.addHeightPaddingToLoginSignupView.constant = viewHeight / 2 + 10
             self.loginSignupView.addTopPaddingToEmail.constant = 20
@@ -107,7 +116,7 @@ class LoginSignupViewController: UIViewController {
                 self.dontHaveAccountlable.alpha = 1
                 self.dontHaveAccountlable.text = "Already have an account?"
                 self.loginSignUpBtn.setTitle("Sign Up", for: .normal)
-                self.createAccountBtn.setTitle("Log In", for: .normal)
+                self.accountBtn.setTitle("Log In", for: .normal)
                 
             }
 
@@ -117,7 +126,7 @@ class LoginSignupViewController: UIViewController {
             self.loginSignupView.confirmPassword.isEnabled = true
             self.addYAxisToLoginSignupView.constant = viewCenterY / 5 - 30
             self.addHeightPaddingToLoginSignupView.constant = viewHeight/3 + 30
-            self.addYAxisToLogoView.constant = -(viewCenterY / 6) * 2
+            self.addYAxisToLogoView.constant = -(viewCenterY / 6) * 2.1 + 0.01
             self.loginSignupView.addTopPaddingToEmail.constant = -40
             self.loginSignupView.addTopPaddingPassword.constant = 40
             self.loginSignupView.addTopPaddingToConfirmPassword.constant = -40
@@ -140,7 +149,7 @@ class LoginSignupViewController: UIViewController {
                 self.dontHaveAccountlable.alpha = 1
                 self.dontHaveAccountlable.text = "Don't have an account?"
                 self.loginSignUpBtn.setTitle("Log In", for: .normal)
-                self.createAccountBtn.setTitle("Sign Up", for: .normal)
+                self.accountBtn.setTitle("Sign Up", for: .normal)
                 
             })
         }
@@ -221,18 +230,19 @@ class LoginSignupViewController: UIViewController {
     
     fileprivate func logIn(_ user: User) {
         self.showSpinner()
-        
+        self.uiCompenentsEnable(isEnabled: false)
         /// NOTE: handling user log in
         NetworkService.loginRequest(user: user) { (result) in
             switch result {
             case .success(let value):
                 if (value["message"] != nil) {
                     self.removeSpinner()
+                    self.uiCompenentsEnable(isEnabled: true)
                     self.showAlert(with: "\(value["message"]!). Please try again.")
                 } else {
+                    self.userDefault.set(value["token"], forKey: "isUserLoggedIn")
                     self.removeSpinner()
-                    //TODO: save current user token
-                    
+                    self.uiCompenentsEnable(isEnabled: true)
                     let tabVC = TabBarController()
                     tabVC.modalPresentationStyle = .fullScreen
                     self.navigationController?.pushViewController(tabVC, animated: true)
@@ -247,16 +257,19 @@ class LoginSignupViewController: UIViewController {
     
     fileprivate func signUp(_ newUser: User) {
         self.showSpinner()
+        self.uiCompenentsEnable(isEnabled: false)
         /// NOTE: handling user sign up
         NetworkService.signUpRequest(newUser: newUser) { (result) in
             switch result {
             case .success(let value):
                 if (value["message"] != nil) {
                     self.removeSpinner()
+                    self.uiCompenentsEnable(isEnabled: true)
                     self.showAlert(with: "\(value["message"]!). Please try again.")
                 } else {
-                    //TODO: save token in useDefaults
+                    self.userDefault.set(value["token"], forKey: "isUserLoggedIn")
                     self.removeSpinner()
+                    self.uiCompenentsEnable(isEnabled: true)
                     let layout = UICollectionViewFlowLayout()
                     layout.scrollDirection = .horizontal
                     let onBoardingVC = OnBoardingViewController(collectionViewLayout: layout)

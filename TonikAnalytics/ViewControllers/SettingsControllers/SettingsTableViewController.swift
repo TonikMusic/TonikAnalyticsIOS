@@ -12,6 +12,7 @@ class SettingsTableViewController: UITableViewController {
     // MARK: - Properties
     var userInfoHeaderView: UserInfoHeaderView!
     var coordinator: SettingsCoordinator?
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,10 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @objc func signOut() {
-        print("signing out")
+        self.userDefaults.removeObject(forKey: "isUserLoggedIn")
+        let name = Notification.Name(rawValue: signout)
+//        NotificationCenter.default.post(name: name, object: nil)
+        coordinator?.navigate(to: .loginSignUp)
     }
     
 }

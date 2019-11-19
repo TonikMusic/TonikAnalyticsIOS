@@ -11,6 +11,7 @@ import UIKit
 protocol SectionType: CustomStringConvertible {
     var containsSwitch: Bool { get }
     var containsArrow: Bool { get }
+    var switchIsOn: Bool { get }
 }
 
 
@@ -89,6 +90,13 @@ enum AccountOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
         }
     }
     
+    var switchIsOn: Bool {
+        switch self {
+        case .darkMode, .notification: return true
+        case .updateEmail, .changePassword, .manageSubscription: return false
+        }
+    }
+    
     var description: String {
         switch self {
         case .darkMode: return "Dark Mode"
@@ -126,6 +134,7 @@ enum OtherOptions: Int, CaseIterable, CustomStringConvertible, SectionType {
     
     var containsSwitch: Bool { return false }
     var containsArrow: Bool { return true }
+    var switchIsOn: Bool { return false }
     
      var description: String {
          switch self {
